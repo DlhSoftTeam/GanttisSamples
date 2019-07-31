@@ -6,20 +6,187 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BFEACF6522F18E9100C933A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEACF6422F18E9100C933A3 /* AppDelegate.swift */; };
+		BFEACF6722F18E9100C933A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEACF6622F18E9100C933A3 /* ViewController.swift */; };
+		BFEACF6922F18E9100C933A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFEACF6822F18E9100C933A3 /* Assets.xcassets */; };
+		BFEACF6C22F18E9100C933A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFEACF6A22F18E9100C933A3 /* Main.storyboard */; };
+		BFEACF7922F18EA800C933A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEACF7822F18EA800C933A3 /* AppDelegate.swift */; };
+		BFEACF7B22F18EA800C933A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEACF7A22F18EA800C933A3 /* ViewController.swift */; };
+		BFEACF7E22F18EA800C933A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFEACF7C22F18EA800C933A3 /* Main.storyboard */; };
+		BFEACF8022F18EA900C933A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFEACF7F22F18EA900C933A3 /* Assets.xcassets */; };
+		BFEACF8322F18EA900C933A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFEACF8122F18EA900C933A3 /* LaunchScreen.storyboard */; };
+		BFEACF8922F18EBF00C933A3 /* Ganttis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFEACF8822F18EBF00C933A3 /* Ganttis.framework */; };
+		BFEACF8A22F18EBF00C933A3 /* Ganttis.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BFEACF8822F18EBF00C933A3 /* Ganttis.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BFEACF8D22F18ECF00C933A3 /* GanttisTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFEACF8C22F18ECF00C933A3 /* GanttisTouch.framework */; };
+		BFEACF8E22F18ECF00C933A3 /* GanttisTouch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BFEACF8C22F18ECF00C933A3 /* GanttisTouch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BFEACF8B22F18EBF00C933A3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BFEACF8A22F18EBF00C933A3 /* Ganttis.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFEACF8F22F18ED000C933A3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BFEACF8E22F18ECF00C933A3 /* GanttisTouch.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BFEACF6122F18E9100C933A3 /* GanttChart.GetStarted.macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GanttChart.GetStarted.macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFEACF6422F18E9100C933A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BFEACF6622F18E9100C933A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BFEACF6822F18E9100C933A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFEACF6B22F18E9100C933A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BFEACF6D22F18E9100C933A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFEACF6E22F18E9100C933A3 /* GanttChart_GetStarted_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GanttChart_GetStarted_macOS.entitlements; sourceTree = "<group>"; };
+		BFEACF7622F18EA800C933A3 /* GanttChart.GetStarted.iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GanttChart.GetStarted.iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFEACF7822F18EA800C933A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BFEACF7A22F18EA800C933A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BFEACF7D22F18EA800C933A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BFEACF7F22F18EA900C933A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFEACF8222F18EA900C933A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BFEACF8422F18EA900C933A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFEACF8822F18EBF00C933A3 /* Ganttis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Ganttis.framework; sourceTree = "<group>"; };
+		BFEACF8C22F18ECF00C933A3 /* GanttisTouch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GanttisTouch.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFEACF5E22F18E9100C933A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFEACF8922F18EBF00C933A3 /* Ganttis.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFEACF7322F18EA800C933A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFEACF8D22F18ECF00C933A3 /* GanttisTouch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
 		BFEACF5622F18E3800C933A3 = {
 			isa = PBXGroup;
 			children = (
+				BFEACF8822F18EBF00C933A3 /* Ganttis.framework */,
+				BFEACF8C22F18ECF00C933A3 /* GanttisTouch.framework */,
+				BFEACF6322F18E9100C933A3 /* GanttChart.GetStarted.macOS */,
+				BFEACF7722F18EA800C933A3 /* GanttChart.GetStarted.iOS */,
+				BFEACF6222F18E9100C933A3 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
+		BFEACF6222F18E9100C933A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFEACF6122F18E9100C933A3 /* GanttChart.GetStarted.macOS.app */,
+				BFEACF7622F18EA800C933A3 /* GanttChart.GetStarted.iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFEACF6322F18E9100C933A3 /* GanttChart.GetStarted.macOS */ = {
+			isa = PBXGroup;
+			children = (
+				BFEACF6422F18E9100C933A3 /* AppDelegate.swift */,
+				BFEACF6622F18E9100C933A3 /* ViewController.swift */,
+				BFEACF6822F18E9100C933A3 /* Assets.xcassets */,
+				BFEACF6A22F18E9100C933A3 /* Main.storyboard */,
+				BFEACF6D22F18E9100C933A3 /* Info.plist */,
+				BFEACF6E22F18E9100C933A3 /* GanttChart_GetStarted_macOS.entitlements */,
+			);
+			path = GanttChart.GetStarted.macOS;
+			sourceTree = "<group>";
+		};
+		BFEACF7722F18EA800C933A3 /* GanttChart.GetStarted.iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BFEACF7822F18EA800C933A3 /* AppDelegate.swift */,
+				BFEACF7A22F18EA800C933A3 /* ViewController.swift */,
+				BFEACF7C22F18EA800C933A3 /* Main.storyboard */,
+				BFEACF7F22F18EA900C933A3 /* Assets.xcassets */,
+				BFEACF8122F18EA900C933A3 /* LaunchScreen.storyboard */,
+				BFEACF8422F18EA900C933A3 /* Info.plist */,
+			);
+			path = GanttChart.GetStarted.iOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFEACF6022F18E9100C933A3 /* GanttChart.GetStarted.macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFEACF7122F18E9100C933A3 /* Build configuration list for PBXNativeTarget "GanttChart.GetStarted.macOS" */;
+			buildPhases = (
+				BFEACF5D22F18E9100C933A3 /* Sources */,
+				BFEACF5E22F18E9100C933A3 /* Frameworks */,
+				BFEACF5F22F18E9100C933A3 /* Resources */,
+				BFEACF8B22F18EBF00C933A3 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GanttChart.GetStarted.macOS;
+			productName = GanttChart.GetStarted.macOS;
+			productReference = BFEACF6122F18E9100C933A3 /* GanttChart.GetStarted.macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BFEACF7522F18EA800C933A3 /* GanttChart.GetStarted.iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFEACF8522F18EA900C933A3 /* Build configuration list for PBXNativeTarget "GanttChart.GetStarted.iOS" */;
+			buildPhases = (
+				BFEACF7222F18EA800C933A3 /* Sources */,
+				BFEACF7322F18EA800C933A3 /* Frameworks */,
+				BFEACF7422F18EA800C933A3 /* Resources */,
+				BFEACF8F22F18ED000C933A3 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GanttChart.GetStarted.iOS;
+			productName = GanttChart.GetStarted.iOS;
+			productReference = BFEACF7622F18EA800C933A3 /* GanttChart.GetStarted.iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		BFEACF5722F18E3800C933A3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
+				TargetAttributes = {
+					BFEACF6022F18E9100C933A3 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					BFEACF7522F18EA800C933A3 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
 			};
 			buildConfigurationList = BFEACF5A22F18E3800C933A3 /* Build configuration list for PBXProject "GanttisSamples" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -27,14 +194,88 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = BFEACF5622F18E3800C933A3;
+			productRefGroup = BFEACF6222F18E9100C933A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				BFEACF6022F18E9100C933A3 /* GanttChart.GetStarted.macOS */,
+				BFEACF7522F18EA800C933A3 /* GanttChart.GetStarted.iOS */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFEACF5F22F18E9100C933A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFEACF6922F18E9100C933A3 /* Assets.xcassets in Resources */,
+				BFEACF6C22F18E9100C933A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFEACF7422F18EA800C933A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFEACF8322F18EA900C933A3 /* LaunchScreen.storyboard in Resources */,
+				BFEACF8022F18EA900C933A3 /* Assets.xcassets in Resources */,
+				BFEACF7E22F18EA800C933A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFEACF5D22F18E9100C933A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFEACF6722F18E9100C933A3 /* ViewController.swift in Sources */,
+				BFEACF6522F18E9100C933A3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFEACF7222F18EA800C933A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFEACF7B22F18EA800C933A3 /* ViewController.swift in Sources */,
+				BFEACF7922F18EA800C933A3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BFEACF6A22F18E9100C933A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFEACF6B22F18E9100C933A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BFEACF7C22F18EA800C933A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFEACF7D22F18EA800C933A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BFEACF8122F18EA900C933A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFEACF8222F18EA900C933A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BFEACF5B22F18E3800C933A3 /* Debug */ = {
@@ -49,6 +290,303 @@
 			};
 			name = Release;
 		};
+		BFEACF6F22F18E9100C933A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = GanttChart.GetStarted.macOS/GanttChart_GetStarted_macOS.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = V6L9SVN7M4;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = GanttChart.GetStarted.macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DlhSoft.GanttChart-GetStarted-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BFEACF7022F18E9100C933A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = GanttChart.GetStarted.macOS/GanttChart_GetStarted_macOS.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = V6L9SVN7M4;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = GanttChart.GetStarted.macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DlhSoft.GanttChart-GetStarted-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BFEACF8622F18EA900C933A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = V6L9SVN7M4;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = GanttChart.GetStarted.iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DlhSoft.GanttChart-GetStarted-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BFEACF8722F18EA900C933A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = V6L9SVN7M4;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = GanttChart.GetStarted.iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DlhSoft.GanttChart-GetStarted-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -57,6 +595,24 @@
 			buildConfigurations = (
 				BFEACF5B22F18E3800C933A3 /* Debug */,
 				BFEACF5C22F18E3800C933A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFEACF7122F18E9100C933A3 /* Build configuration list for PBXNativeTarget "GanttChart.GetStarted.macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFEACF6F22F18E9100C933A3 /* Debug */,
+				BFEACF7022F18E9100C933A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFEACF8522F18EA900C933A3 /* Build configuration list for PBXNativeTarget "GanttChart.GetStarted.iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFEACF8622F18EA900C933A3 /* Debug */,
+				BFEACF8722F18EA900C933A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
