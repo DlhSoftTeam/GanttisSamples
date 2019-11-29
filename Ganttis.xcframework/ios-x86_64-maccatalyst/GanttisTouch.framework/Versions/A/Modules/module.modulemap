@@ -1,0 +1,11 @@
+framework module GanttisTouch {
+  umbrella header "GanttisTouch.h"
+
+  export *
+  module * { export * }
+}
+
+module GanttisTouch.Swift {
+    header "GanttisTouch-Swift.h"
+    requires objc
+}

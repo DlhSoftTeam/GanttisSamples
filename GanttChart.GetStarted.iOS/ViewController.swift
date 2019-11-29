@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         
         // Initialize items to be displayed as Gantt chart bars by specifying, for each of them, a label (text) to be presented over the item's rectangle, a row to indicate its vertical position, start and finish times to indicate the interval spanned horizontally, and optionally a completion rate (triggering a secondary bar presented on top of the item's rectangle, from the same start time, visually indicating effort completion), and an attachment value (text presented to the right side of the item's rectangle, such as a resource assignment).
         var items: [GanttChartItem] = []
-        for i in 0..<100 {
+        for i in 0..<40 {
             let item = GanttChartItem(
                 label: "Item \(i + 1)",
                 row: i,
@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         
         // Initialize dependencies representing relations between items displayed as line arrows between Gantt chart bars by specifying from and to item references.
         var dependencies: [GanttChartDependency] = []
-        for i in 3..<100 {
+        for i in 3..<40 {
             let dependency = GanttChartDependency(
                 from: items[i - 1],
                 to: items[i])
