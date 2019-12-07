@@ -203,10 +203,10 @@ public struct GanttChartItemConstraints {
   open func drawMilestone(for item: GanttisTouch.GanttChartItem, in rectangle: CoreGraphics.CGRect, fillColor: UIKit.UIColor, secondaryFillColor: UIKit.UIColor, strokeColor: UIKit.UIColor?, strokeWidth: CoreGraphics.CGFloat, isHighlighted: Swift.Bool, isFocused: Swift.Bool, isSelected: Swift.Bool, highlightColor: UIKit.UIColor, focusColor: UIKit.UIColor, selectionColor: UIKit.UIColor, highlightWidth: CoreGraphics.CGFloat, focusWidth: CoreGraphics.CGFloat, selectionWidth: CoreGraphics.CGFloat, allowsMoving: Swift.Bool, allowsMovingVertically: Swift.Bool, thumbDistance: CoreGraphics.CGFloat)
   public func drawCompletionBar(for item: GanttisTouch.GanttChartItem, in rectangle: GanttisTouch.Rectangle, fillColor: GanttisTouch.Color, secondaryFillColor: GanttisTouch.Color, strokeColor: GanttisTouch.Color?, strokeWidth: Swift.Double, cornerRadius: Swift.Double, allowsResizing: Swift.Bool, thumbDistance: Swift.Double)
   open func drawCompletionBar(for item: GanttisTouch.GanttChartItem, in rectangle: CoreGraphics.CGRect, fillColor: UIKit.UIColor, secondaryFillColor: UIKit.UIColor, strokeColor: UIKit.UIColor?, strokeWidth: CoreGraphics.CGFloat, cornerRadius: CoreGraphics.CGFloat, allowsResizing: Swift.Bool, thumbDistance: CoreGraphics.CGFloat)
-  public func drawBarLabel(for item: GanttisTouch.GanttChartItem, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, alignment: GanttisTouch.TextAlignment)
-  open func drawBarLabel(for item: GanttisTouch.GanttChartItem, in rectangle: CoreGraphics.CGRect, text: Swift.String, foregroundColor: UIKit.UIColor, alignment: UIKit.NSTextAlignment)
-  public func drawAttachmentLabel(for item: GanttisTouch.GanttChartItem, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color)
-  open func drawAttachmentLabel(for item: GanttisTouch.GanttChartItem, in rectangle: CoreGraphics.CGRect, text: Swift.String, foregroundColor: UIKit.UIColor)
+  public func drawBarLabel(for item: GanttisTouch.GanttChartItem, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, alignment: GanttisTouch.TextAlignment, font: GanttisTouch.Font)
+  open func drawBarLabel(for item: GanttisTouch.GanttChartItem, in rectangle: CoreGraphics.CGRect, text: Swift.String, foregroundColor: UIKit.UIColor, alignment: UIKit.NSTextAlignment, font: UIKit.UIFont)
+  public func drawAttachmentLabel(for item: GanttisTouch.GanttChartItem, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, font: GanttisTouch.Font)
+  open func drawAttachmentLabel(for item: GanttisTouch.GanttChartItem, in rectangle: CoreGraphics.CGRect, text: Swift.String, foregroundColor: UIKit.UIColor, font: UIKit.UIFont)
   open func draw(dependencyLine: GanttisTouch.GanttChartDependencyLine)
   public func drawDependencyLine(for dependency: GanttisTouch.GanttChartDependency, as polyline: GanttisTouch.Polyline, color: GanttisTouch.Color, width: Swift.Double, arrowWidth: Swift.Double, arrowLength: Swift.Double, isHighlighted: Swift.Bool, isFocused: Swift.Bool, isSelected: Swift.Bool, highlightWidth: Swift.Double, focusWidth: Swift.Double, selectionWidth: Swift.Double)
   open func drawDependencyLine(for dependency: GanttisTouch.GanttChartDependency, through points: [CoreGraphics.CGPoint], color: UIKit.UIColor, width: CoreGraphics.CGFloat, arrowWidth: CoreGraphics.CGFloat, arrowLength: CoreGraphics.CGFloat, isHighlighted: Swift.Bool, isFocused: Swift.Bool, isSelected: Swift.Bool, highlightWidth: CoreGraphics.CGFloat, focusWidth: CoreGraphics.CGFloat, selectionWidth: CoreGraphics.CGFloat)
@@ -222,8 +222,8 @@ public struct GanttChartItemConstraints {
   open func drawTimeArea(for highlighter: GanttisTouch.TimeSelector, in rectangle: CoreGraphics.CGRect, backgroundColor: UIKit.UIColor)
   public func drawTimeAreaBorder(for highlighter: GanttisTouch.TimeSelector, in rectangle: GanttisTouch.Rectangle, line: GanttisTouch.Line, lineWidth: Swift.Double, color: GanttisTouch.Color)
   open func drawTimeAreaBorder(for highlighter: GanttisTouch.TimeSelector, in rectangle: CoreGraphics.CGRect, p1: CoreGraphics.CGPoint, p2: CoreGraphics.CGPoint, lineWidth: CoreGraphics.CGFloat, color: UIKit.UIColor)
-  public func drawTimeAreaLabel(for highlighter: GanttisTouch.TimeSelector, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, alignment: GanttisTouch.TextAlignment, verticalAlignment: GanttisTouch.VerticalTextAlignment)
-  open func drawTimeAreaLabel(for highlighter: GanttisTouch.TimeSelector, in rectangle: CoreGraphics.CGRect, text: Swift.String, foregroundColor: UIKit.UIColor, alignment: UIKit.NSTextAlignment, verticalAlignment: GanttisTouch.VerticalTextAlignment)
+  public func drawTimeAreaLabel(for highlighter: GanttisTouch.TimeSelector, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, alignment: GanttisTouch.TextAlignment, font: GanttisTouch.Font, verticalAlignment: GanttisTouch.VerticalTextAlignment)
+  open func drawTimeAreaLabel(for highlighter: GanttisTouch.TimeSelector, in rectangle: CoreGraphics.CGRect, text: Swift.String, foregroundColor: UIKit.UIColor, alignment: UIKit.NSTextAlignment, font: UIKit.UIFont, verticalAlignment: GanttisTouch.VerticalTextAlignment)
   open func scrollTo(startX: Swift.Double, finishX: Swift.Double)
   open func scrollVerticallyTo(startY: Swift.Double, finishY: Swift.Double)
   @objc deinit
@@ -715,6 +715,16 @@ public protocol GanttChartCollectionProvider : AnyObject {
   var preferredTimeline: GanttisTouch.TimeRange { get }
   func filteredItems(range: GanttisTouch.RowRange, timeline: GanttisTouch.TimeRange) -> [GanttisTouch.GanttChartItem]
   func filteredDependencies(range: GanttisTouch.RowRange, timeline: GanttisTouch.TimeRange) -> [GanttisTouch.GanttChartDependency]
+  var availableItems: [GanttisTouch.GanttChartItem]? { get }
+  var availableDependencies: [GanttisTouch.GanttChartDependency]? { get }
+}
+extension GanttChartCollectionProvider {
+  public var availableItems: [GanttisTouch.GanttChartItem]? {
+    get
+  }
+  public var availableDependencies: [GanttisTouch.GanttChartDependency]? {
+    get
+  }
 }
 public protocol GanttChartItemFactory : AnyObject {
   func createItem(row: GanttisTouch.Row, time: GanttisTouch.Time, isMilestone: Swift.Bool) -> GanttisTouch.GanttChartItem
@@ -1043,6 +1053,17 @@ public enum BorderPosition : Swift.Equatable, Swift.Hashable, Swift.CaseIterable
     get
   }
 }
+public struct Font : Swift.Equatable, Swift.Hashable {
+  public init(name: Swift.String? = nil, size: Swift.Double? = nil)
+  public var name: Swift.String?
+  public var size: Swift.Double?
+  public static let system: GanttisTouch.Font
+  public static func == (a: GanttisTouch.Font, b: GanttisTouch.Font) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
 public enum Cursor : Swift.Equatable, Swift.Hashable {
   case moveHorizontally, moveVertically
   case resizeHorizontally, resizeVertically
@@ -1086,6 +1107,7 @@ public struct GanttChartHeaderBaseStyle {
   public var labelBorderLineWidth: Swift.Double
   public var labelForegroundColor: GanttisTouch.Color
   public var labelAlignment: GanttisTouch.TextAlignment
+  public var labelFont: GanttisTouch.Font
   public var verticalLabelAlignment: GanttisTouch.VerticalTextAlignment
   public var horizontalLabelInset: Swift.Double
   public var verticalLabelInset: Swift.Double
@@ -1107,6 +1129,7 @@ public struct GanttChartHeaderStyle {
   public var labelBorderLineWidth: Swift.Double?
   public var labelForegroundColor: GanttisTouch.Color?
   public var labelAlignment: GanttisTouch.TextAlignment?
+  public var labelFont: GanttisTouch.Font?
   public var verticalLabelAlignment: GanttisTouch.VerticalTextAlignment?
   public var horizontalLabelInset: Swift.Double?
   public var verticalLabelInset: Swift.Double?
@@ -1145,8 +1168,8 @@ public struct GanttChartHeaderStyle {
   open func drawCell(for selector: GanttisTouch.TimeSelector, of row: GanttisTouch.GanttChartHeaderRow, in rectangle: CoreGraphics.CGRect, backgroundColor: UIKit.UIColor)
   public func drawCellBorder(for selector: GanttisTouch.TimeSelector, of row: GanttisTouch.GanttChartHeaderRow, in rectangle: GanttisTouch.Rectangle, line: GanttisTouch.Line, lineWidth: Swift.Double, color: GanttisTouch.Color)
   open func drawCellBorder(for selector: GanttisTouch.TimeSelector, of row: GanttisTouch.GanttChartHeaderRow, in rectangle: CoreGraphics.CGRect, p1: CoreGraphics.CGPoint, p2: CoreGraphics.CGPoint, lineWidth: CoreGraphics.CGFloat, color: UIKit.UIColor)
-  public func drawCellLabel(for selector: GanttisTouch.TimeSelector, of row: GanttisTouch.GanttChartHeaderRow, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, alignment: GanttisTouch.TextAlignment, verticalAlignment: GanttisTouch.VerticalTextAlignment)
-  open func drawCellLabel(for selector: GanttisTouch.TimeSelector, of row: GanttisTouch.GanttChartHeaderRow, in rectangle: CoreGraphics.CGRect, text: Swift.String, foregroundColor: UIKit.UIColor, alignment: UIKit.NSTextAlignment, verticalAlignment: GanttisTouch.VerticalTextAlignment)
+  public func drawCellLabel(for selector: GanttisTouch.TimeSelector, of row: GanttisTouch.GanttChartHeaderRow, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, alignment: GanttisTouch.TextAlignment, font: GanttisTouch.Font, verticalAlignment: GanttisTouch.VerticalTextAlignment)
+  open func drawCellLabel(for selector: GanttisTouch.TimeSelector, of row: GanttisTouch.GanttChartHeaderRow, in rectangle: CoreGraphics.CGRect, text: Swift.String, foregroundColor: UIKit.UIColor, alignment: UIKit.NSTextAlignment, font: UIKit.UIFont, verticalAlignment: GanttisTouch.VerticalTextAlignment)
   open func scrollTo(startX: Swift.Double, finishX: Swift.Double)
   @objc deinit
 }
@@ -1331,7 +1354,7 @@ public protocol GanttChartHeaderPresenter : AnyObject {
   func drawTimeArea(for highlighter: GanttisTouch.ScheduleTimeSelector, in rectangle: GanttisTouch.Rectangle, fillColor: GanttisTouch.Color)
   func drawCell(for selector: GanttisTouch.TimeSelector, of row: GanttisTouch.GanttChartHeaderRow, in rectangle: GanttisTouch.Rectangle, backgroundColor: GanttisTouch.Color)
   func drawCellBorder(for selector: GanttisTouch.TimeSelector, of row: GanttisTouch.GanttChartHeaderRow, in rectangle: GanttisTouch.Rectangle, line: GanttisTouch.Line, lineWidth: Swift.Double, color: GanttisTouch.Color)
-  func drawCellLabel(for selector: GanttisTouch.TimeSelector, of row: GanttisTouch.GanttChartHeaderRow, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, alignment: GanttisTouch.TextAlignment, verticalAlignment: GanttisTouch.VerticalTextAlignment)
+  func drawCellLabel(for selector: GanttisTouch.TimeSelector, of row: GanttisTouch.GanttChartHeaderRow, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, alignment: GanttisTouch.TextAlignment, font: GanttisTouch.Font, verticalAlignment: GanttisTouch.VerticalTextAlignment)
 }
 public protocol GanttChartHeaderViewportObserver : AnyObject {
   func viewportDidChange(to value: GanttisTouch.Rectangle, from originalValue: GanttisTouch.Rectangle)
@@ -1398,6 +1421,10 @@ extension TextAlignment {
   public init(_ source: UIKit.NSTextAlignment)
   public init?(_ source: UIKit.NSTextAlignment?)
 }
+extension UIFont {
+  convenience public init(_ source: GanttisTouch.Font)
+  convenience public init?(_ source: GanttisTouch.Font?)
+}
 extension Mode {
   public init(_ source: UIKit.UITraitCollection)
   public init?(_ source: UIKit.UITraitCollection?)
@@ -1445,10 +1472,10 @@ public class AppearanceModeProvider : GanttisTouch.ModeProvider {
   open func drawMilestone(for item: GanttisTouch.GanttChartItem, in rectangle: CoreGraphics.CGRect, fillColor: UIKit.UIColor, secondaryFillColor: UIKit.UIColor, strokeColor: UIKit.UIColor?, strokeWidth: CoreGraphics.CGFloat, isHighlighted: Swift.Bool, isFocused: Swift.Bool, isSelected: Swift.Bool, highlightColor: UIKit.UIColor, focusColor: UIKit.UIColor, selectionColor: UIKit.UIColor, highlightWidth: CoreGraphics.CGFloat, focusWidth: CoreGraphics.CGFloat, selectionWidth: CoreGraphics.CGFloat, allowsMoving: Swift.Bool, allowsMovingVertically: Swift.Bool, thumbDistance: CoreGraphics.CGFloat)
   public func drawCompletionBar(for item: GanttisTouch.GanttChartItem, in rectangle: GanttisTouch.Rectangle, fillColor: GanttisTouch.Color, secondaryFillColor: GanttisTouch.Color, strokeColor: GanttisTouch.Color?, strokeWidth: Swift.Double, cornerRadius: Swift.Double, allowsResizing: Swift.Bool, thumbDistance: Swift.Double)
   open func drawCompletionBar(for item: GanttisTouch.GanttChartItem, in rectangle: CoreGraphics.CGRect, fillColor: UIKit.UIColor, secondaryFillColor: UIKit.UIColor, strokeColor: UIKit.UIColor?, strokeWidth: CoreGraphics.CGFloat, cornerRadius: CoreGraphics.CGFloat, allowsResizing: Swift.Bool, thumbDistance: CoreGraphics.CGFloat)
-  public func drawBarLabel(for item: GanttisTouch.GanttChartItem, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, alignment: GanttisTouch.TextAlignment)
-  open func drawBarLabel(for item: GanttisTouch.GanttChartItem, in rectangle: CoreGraphics.CGRect, text: Swift.String, foregroundColor: UIKit.UIColor, alignment: UIKit.NSTextAlignment)
-  public func drawAttachmentLabel(for item: GanttisTouch.GanttChartItem, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color)
-  open func drawAttachmentLabel(for item: GanttisTouch.GanttChartItem, in rectangle: CoreGraphics.CGRect, text: Swift.String, foregroundColor: UIKit.UIColor)
+  public func drawBarLabel(for item: GanttisTouch.GanttChartItem, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, alignment: GanttisTouch.TextAlignment, font: GanttisTouch.Font)
+  open func drawBarLabel(for item: GanttisTouch.GanttChartItem, in rectangle: CoreGraphics.CGRect, text: Swift.String, foregroundColor: UIKit.UIColor, alignment: UIKit.NSTextAlignment, font: UIKit.UIFont)
+  public func drawAttachmentLabel(for item: GanttisTouch.GanttChartItem, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, font: GanttisTouch.Font)
+  open func drawAttachmentLabel(for item: GanttisTouch.GanttChartItem, in rectangle: CoreGraphics.CGRect, text: Swift.String, foregroundColor: UIKit.UIColor, font: UIKit.UIFont)
   open func draw(dependencyLine: GanttisTouch.GanttChartDependencyLine)
   public func drawDependencyLine(for dependency: GanttisTouch.GanttChartDependency, as polyline: GanttisTouch.Polyline, color: GanttisTouch.Color, width: Swift.Double, arrowWidth: Swift.Double, arrowLength: Swift.Double, isHighlighted: Swift.Bool, isFocused: Swift.Bool, isSelected: Swift.Bool, highlightWidth: Swift.Double, focusWidth: Swift.Double, selectionWidth: Swift.Double)
   open func drawDependencyLine(for dependency: GanttisTouch.GanttChartDependency, through points: [CoreGraphics.CGPoint], color: UIKit.UIColor, width: CoreGraphics.CGFloat, arrowWidth: CoreGraphics.CGFloat, arrowLength: CoreGraphics.CGFloat, isHighlighted: Swift.Bool, isFocused: Swift.Bool, isSelected: Swift.Bool, highlightWidth: CoreGraphics.CGFloat, focusWidth: CoreGraphics.CGFloat, selectionWidth: CoreGraphics.CGFloat)
@@ -1466,14 +1493,14 @@ public class AppearanceModeProvider : GanttisTouch.ModeProvider {
   open func drawHeaderCell(for selector: GanttisTouch.TimeSelector, of row: GanttisTouch.GanttChartHeaderRow, in rectangle: CoreGraphics.CGRect, backgroundColor: UIKit.UIColor)
   public func drawHeaderCellBorder(for selector: GanttisTouch.TimeSelector, of row: GanttisTouch.GanttChartHeaderRow, in rectangle: GanttisTouch.Rectangle, line: GanttisTouch.Line, lineWidth: Swift.Double, color: GanttisTouch.Color)
   open func drawHeaderCellBorder(for selector: GanttisTouch.TimeSelector, of row: GanttisTouch.GanttChartHeaderRow, in rectangle: CoreGraphics.CGRect, p1: CoreGraphics.CGPoint, p2: CoreGraphics.CGPoint, lineWidth: CoreGraphics.CGFloat, color: UIKit.UIColor)
-  public func drawHeaderCellLabel(for selector: GanttisTouch.TimeSelector, of row: GanttisTouch.GanttChartHeaderRow, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, alignment: GanttisTouch.TextAlignment, verticalAlignment: GanttisTouch.VerticalTextAlignment)
-  open func drawHeaderCellLabel(for selector: GanttisTouch.TimeSelector, of row: GanttisTouch.GanttChartHeaderRow, in rectangle: CoreGraphics.CGRect, text: Swift.String, foregroundColor: UIKit.UIColor, alignment: UIKit.NSTextAlignment, verticalAlignment: GanttisTouch.VerticalTextAlignment)
+  public func drawHeaderCellLabel(for selector: GanttisTouch.TimeSelector, of row: GanttisTouch.GanttChartHeaderRow, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, alignment: GanttisTouch.TextAlignment, font: GanttisTouch.Font, verticalAlignment: GanttisTouch.VerticalTextAlignment)
+  open func drawHeaderCellLabel(for selector: GanttisTouch.TimeSelector, of row: GanttisTouch.GanttChartHeaderRow, in rectangle: CoreGraphics.CGRect, text: Swift.String, foregroundColor: UIKit.UIColor, alignment: UIKit.NSTextAlignment, font: UIKit.UIFont, verticalAlignment: GanttisTouch.VerticalTextAlignment)
   public func drawContentTimeArea(for highlighter: GanttisTouch.TimeSelector, in rectangle: GanttisTouch.Rectangle, backgroundColor: GanttisTouch.Color)
   open func drawContentTimeArea(for highlighter: GanttisTouch.TimeSelector, in rectangle: CoreGraphics.CGRect, backgroundColor: UIKit.UIColor)
   public func drawContentTimeAreaBorder(for highlighter: GanttisTouch.TimeSelector, in rectangle: GanttisTouch.Rectangle, line: GanttisTouch.Line, lineWidth: Swift.Double, color: GanttisTouch.Color)
   open func drawContentTimeAreaBorder(for highlighter: GanttisTouch.TimeSelector, in rectangle: CoreGraphics.CGRect, p1: CoreGraphics.CGPoint, p2: CoreGraphics.CGPoint, lineWidth: CoreGraphics.CGFloat, color: UIKit.UIColor)
-  public func drawContentTimeAreaLabel(for highlighter: GanttisTouch.TimeSelector, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, alignment: GanttisTouch.TextAlignment, verticalAlignment: GanttisTouch.VerticalTextAlignment)
-  open func drawContentTimeAreaLabel(for highlighter: GanttisTouch.TimeSelector, in rectangle: CoreGraphics.CGRect, text: Swift.String, foregroundColor: UIKit.UIColor, alignment: UIKit.NSTextAlignment, verticalAlignment: GanttisTouch.VerticalTextAlignment)
+  public func drawContentTimeAreaLabel(for highlighter: GanttisTouch.TimeSelector, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, alignment: GanttisTouch.TextAlignment, font: GanttisTouch.Font, verticalAlignment: GanttisTouch.VerticalTextAlignment)
+  open func drawContentTimeAreaLabel(for highlighter: GanttisTouch.TimeSelector, in rectangle: CoreGraphics.CGRect, text: Swift.String, foregroundColor: UIKit.UIColor, alignment: UIKit.NSTextAlignment, font: UIKit.UIFont, verticalAlignment: GanttisTouch.VerticalTextAlignment)
   open func toolTip(for item: GanttisTouch.GanttChartItem) -> Swift.String?
   open func toolTip(for dependency: GanttisTouch.GanttChartDependency) -> Swift.String?
   public func scrollTo(startX: Swift.Double, finishX: Swift.Double)
@@ -1780,7 +1807,7 @@ public class GanttChartController {
     public func drawTimeArea(for highlighter: GanttisTouch.ScheduleTimeSelector, in rectangle: GanttisTouch.Rectangle, fillColor: GanttisTouch.Color)
     public func drawCell(for selector: GanttisTouch.TimeSelector, of row: GanttisTouch.GanttChartHeaderRow, in rectangle: GanttisTouch.Rectangle, backgroundColor: GanttisTouch.Color)
     public func drawCellBorder(for selector: GanttisTouch.TimeSelector, of row: GanttisTouch.GanttChartHeaderRow, in rectangle: GanttisTouch.Rectangle, line: GanttisTouch.Line, lineWidth: Swift.Double, color: GanttisTouch.Color)
-    public func drawCellLabel(for selector: GanttisTouch.TimeSelector, of row: GanttisTouch.GanttChartHeaderRow, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, alignment: GanttisTouch.TextAlignment, verticalAlignment: GanttisTouch.VerticalTextAlignment)
+    public func drawCellLabel(for selector: GanttisTouch.TimeSelector, of row: GanttisTouch.GanttChartHeaderRow, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, alignment: GanttisTouch.TextAlignment, font: GanttisTouch.Font, verticalAlignment: GanttisTouch.VerticalTextAlignment)
     @objc deinit
   }
   public class ContentPresenterAdapter : GanttisTouch.GanttChartContentPresenter {
@@ -1793,8 +1820,8 @@ public class GanttChartController {
     public func drawSummaryBar(for item: GanttisTouch.GanttChartItem, in rectangle: GanttisTouch.Rectangle, fillColor: GanttisTouch.Color, secondaryFillColor: GanttisTouch.Color, strokeColor: GanttisTouch.Color?, strokeWidth: Swift.Double, triangleInset: Swift.Double, triangleScale: Swift.Double, isExpanded: Swift.Bool, isHighlighted: Swift.Bool, isFocused: Swift.Bool, isSelected: Swift.Bool, highlightColor: GanttisTouch.Color, focusColor: GanttisTouch.Color, selectionColor: GanttisTouch.Color, highlightWidth: Swift.Double, focusWidth: Swift.Double, selectionWidth: Swift.Double, allowsMoving: Swift.Bool, allowsResizing: Swift.Bool, allowsResizingAtStart: Swift.Bool, allowsMovingVertically: Swift.Bool, thumbDistance: Swift.Double)
     public func drawMilestone(for item: GanttisTouch.GanttChartItem, in rectangle: GanttisTouch.Rectangle, fillColor: GanttisTouch.Color, secondaryFillColor: GanttisTouch.Color, strokeColor: GanttisTouch.Color?, strokeWidth: Swift.Double, isHighlighted: Swift.Bool, isFocused: Swift.Bool, isSelected: Swift.Bool, highlightColor: GanttisTouch.Color, focusColor: GanttisTouch.Color, selectionColor: GanttisTouch.Color, highlightWidth: Swift.Double, focusWidth: Swift.Double, selectionWidth: Swift.Double, allowsMoving: Swift.Bool, allowsMovingVertically: Swift.Bool, thumbDistance: Swift.Double)
     public func drawCompletionBar(for item: GanttisTouch.GanttChartItem, in rectangle: GanttisTouch.Rectangle, fillColor: GanttisTouch.Color, secondaryFillColor: GanttisTouch.Color, strokeColor: GanttisTouch.Color?, strokeWidth: Swift.Double, cornerRadius: Swift.Double, allowsResizing: Swift.Bool, thumbDistance: Swift.Double)
-    public func drawBarLabel(for item: GanttisTouch.GanttChartItem, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, alignment: GanttisTouch.TextAlignment)
-    public func drawAttachmentLabel(for item: GanttisTouch.GanttChartItem, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color)
+    public func drawBarLabel(for item: GanttisTouch.GanttChartItem, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, alignment: GanttisTouch.TextAlignment, font: GanttisTouch.Font)
+    public func drawAttachmentLabel(for item: GanttisTouch.GanttChartItem, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, font: GanttisTouch.Font)
     public func draw(dependencyLine: GanttisTouch.GanttChartDependencyLine)
     public func drawDependencyLine(for dependency: GanttisTouch.GanttChartDependency, as polyline: GanttisTouch.Polyline, color: GanttisTouch.Color, width: Swift.Double, arrowWidth: Swift.Double, arrowLength: Swift.Double, isHighlighted: Swift.Bool, isFocused: Swift.Bool, isSelected: Swift.Bool, highlightWidth: Swift.Double, focusWidth: Swift.Double, selectionWidth: Swift.Double)
     public func drawDependencyLineThumb(for item: GanttisTouch.GanttChartItem, type: GanttisTouch.GanttChartDependencyEndType, center: GanttisTouch.Point, radius: Swift.Double, color: GanttisTouch.Color)
@@ -1803,7 +1830,7 @@ public class GanttChartController {
     public func drawTimeArea(for highlighter: GanttisTouch.ScheduleTimeSelector, in rectangle: GanttisTouch.Rectangle, fillColor: GanttisTouch.Color)
     public func drawTimeArea(for highlighter: GanttisTouch.TimeSelector, in rectangle: GanttisTouch.Rectangle, backgroundColor: GanttisTouch.Color)
     public func drawTimeAreaBorder(for highlighter: GanttisTouch.TimeSelector, in rectangle: GanttisTouch.Rectangle, line: GanttisTouch.Line, lineWidth: Swift.Double, color: GanttisTouch.Color)
-    public func drawTimeAreaLabel(for highlighter: GanttisTouch.TimeSelector, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, alignment: GanttisTouch.TextAlignment, verticalAlignment: GanttisTouch.VerticalTextAlignment)
+    public func drawTimeAreaLabel(for highlighter: GanttisTouch.TimeSelector, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, alignment: GanttisTouch.TextAlignment, font: GanttisTouch.Font, verticalAlignment: GanttisTouch.VerticalTextAlignment)
     public func toolTip(for item: GanttisTouch.GanttChartItem) -> Swift.String?
     public func toolTip(for dependency: GanttisTouch.GanttChartDependency) -> Swift.String?
     @objc deinit
@@ -1849,8 +1876,8 @@ public protocol GanttChartPresenter : AnyObject {
   func drawSummaryBar(for item: GanttisTouch.GanttChartItem, in rectangle: GanttisTouch.Rectangle, fillColor: GanttisTouch.Color, secondaryFillColor: GanttisTouch.Color, strokeColor: GanttisTouch.Color?, strokeWidth: Swift.Double, triangleInset: Swift.Double, triangleScale: Swift.Double, isExpanded: Swift.Bool, isHighlighted: Swift.Bool, isFocused: Swift.Bool, isSelected: Swift.Bool, highlightColor: GanttisTouch.Color, focusColor: GanttisTouch.Color, selectionColor: GanttisTouch.Color, highlightWidth: Swift.Double, focusWidth: Swift.Double, selectionWidth: Swift.Double, allowsMoving: Swift.Bool, allowsResizing: Swift.Bool, allowsResizingAtStart: Swift.Bool, allowsMovingVertically: Swift.Bool, thumbDistance: Swift.Double)
   func drawMilestone(for item: GanttisTouch.GanttChartItem, in rectangle: GanttisTouch.Rectangle, fillColor: GanttisTouch.Color, secondaryFillColor: GanttisTouch.Color, strokeColor: GanttisTouch.Color?, strokeWidth: Swift.Double, isHighlighted: Swift.Bool, isFocused: Swift.Bool, isSelected: Swift.Bool, highlightColor: GanttisTouch.Color, focusColor: GanttisTouch.Color, selectionColor: GanttisTouch.Color, highlightWidth: Swift.Double, focusWidth: Swift.Double, selectionWidth: Swift.Double, allowsMoving: Swift.Bool, allowsMovingVertically: Swift.Bool, thumbDistance: Swift.Double)
   func drawCompletionBar(for item: GanttisTouch.GanttChartItem, in rectangle: GanttisTouch.Rectangle, fillColor: GanttisTouch.Color, secondaryFillColor: GanttisTouch.Color, strokeColor: GanttisTouch.Color?, strokeWidth: Swift.Double, cornerRadius: Swift.Double, allowsResizing: Swift.Bool, thumbDistance: Swift.Double)
-  func drawBarLabel(for item: GanttisTouch.GanttChartItem, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, alignment: GanttisTouch.TextAlignment)
-  func drawAttachmentLabel(for item: GanttisTouch.GanttChartItem, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color)
+  func drawBarLabel(for item: GanttisTouch.GanttChartItem, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, alignment: GanttisTouch.TextAlignment, font: GanttisTouch.Font)
+  func drawAttachmentLabel(for item: GanttisTouch.GanttChartItem, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, font: GanttisTouch.Font)
   func draw(dependencyLine: GanttisTouch.GanttChartDependencyLine)
   func drawDependencyLine(for dependency: GanttisTouch.GanttChartDependency, as polyline: GanttisTouch.Polyline, color: GanttisTouch.Color, width: Swift.Double, arrowWidth: Swift.Double, arrowLength: Swift.Double, isHighlighted: Swift.Bool, isFocused: Swift.Bool, isSelected: Swift.Bool, highlightWidth: Swift.Double, focusWidth: Swift.Double, selectionWidth: Swift.Double)
   func drawDependencyLineThumb(for item: GanttisTouch.GanttChartItem, type: GanttisTouch.GanttChartDependencyEndType, center: GanttisTouch.Point, radius: Swift.Double, color: GanttisTouch.Color)
@@ -1860,10 +1887,10 @@ public protocol GanttChartPresenter : AnyObject {
   func drawContentTimeArea(for highlighter: GanttisTouch.ScheduleTimeSelector, in rectangle: GanttisTouch.Rectangle, fillColor: GanttisTouch.Color)
   func drawHeaderCell(for selector: GanttisTouch.TimeSelector, of row: GanttisTouch.GanttChartHeaderRow, in rectangle: GanttisTouch.Rectangle, backgroundColor: GanttisTouch.Color)
   func drawHeaderCellBorder(for selector: GanttisTouch.TimeSelector, of row: GanttisTouch.GanttChartHeaderRow, in rectangle: GanttisTouch.Rectangle, line: GanttisTouch.Line, lineWidth: Swift.Double, color: GanttisTouch.Color)
-  func drawHeaderCellLabel(for selector: GanttisTouch.TimeSelector, of row: GanttisTouch.GanttChartHeaderRow, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, alignment: GanttisTouch.TextAlignment, verticalAlignment: GanttisTouch.VerticalTextAlignment)
+  func drawHeaderCellLabel(for selector: GanttisTouch.TimeSelector, of row: GanttisTouch.GanttChartHeaderRow, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, alignment: GanttisTouch.TextAlignment, font: GanttisTouch.Font, verticalAlignment: GanttisTouch.VerticalTextAlignment)
   func drawContentTimeArea(for highlighter: GanttisTouch.TimeSelector, in rectangle: GanttisTouch.Rectangle, backgroundColor: GanttisTouch.Color)
   func drawContentTimeAreaBorder(for highlighter: GanttisTouch.TimeSelector, in rectangle: GanttisTouch.Rectangle, line: GanttisTouch.Line, lineWidth: Swift.Double, color: GanttisTouch.Color)
-  func drawContentTimeAreaLabel(for highlighter: GanttisTouch.TimeSelector, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, alignment: GanttisTouch.TextAlignment, verticalAlignment: GanttisTouch.VerticalTextAlignment)
+  func drawContentTimeAreaLabel(for highlighter: GanttisTouch.TimeSelector, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, alignment: GanttisTouch.TextAlignment, font: GanttisTouch.Font, verticalAlignment: GanttisTouch.VerticalTextAlignment)
   func toolTip(for item: GanttisTouch.GanttChartItem) -> Swift.String?
   func toolTip(for dependency: GanttisTouch.GanttChartDependency) -> Swift.String?
 }
@@ -2307,8 +2334,8 @@ public protocol GanttChartContentPresenter : AnyObject {
   func drawSummaryBar(for item: GanttisTouch.GanttChartItem, in rectangle: GanttisTouch.Rectangle, fillColor: GanttisTouch.Color, secondaryFillColor: GanttisTouch.Color, strokeColor: GanttisTouch.Color?, strokeWidth: Swift.Double, triangleInset: Swift.Double, triangleScale: Swift.Double, isExpanded: Swift.Bool, isHighlighted: Swift.Bool, isFocused: Swift.Bool, isSelected: Swift.Bool, highlightColor: GanttisTouch.Color, focusColor: GanttisTouch.Color, selectionColor: GanttisTouch.Color, highlightWidth: Swift.Double, focusWidth: Swift.Double, selectionWidth: Swift.Double, allowsMoving: Swift.Bool, allowsResizing: Swift.Bool, allowsResizingAtStart: Swift.Bool, allowsMovingVertically: Swift.Bool, thumbDistance: Swift.Double)
   func drawMilestone(for item: GanttisTouch.GanttChartItem, in rectangle: GanttisTouch.Rectangle, fillColor: GanttisTouch.Color, secondaryFillColor: GanttisTouch.Color, strokeColor: GanttisTouch.Color?, strokeWidth: Swift.Double, isHighlighted: Swift.Bool, isFocused: Swift.Bool, isSelected: Swift.Bool, highlightColor: GanttisTouch.Color, focusColor: GanttisTouch.Color, selectionColor: GanttisTouch.Color, highlightWidth: Swift.Double, focusWidth: Swift.Double, selectionWidth: Swift.Double, allowsMoving: Swift.Bool, allowsMovingVertically: Swift.Bool, thumbDistance: Swift.Double)
   func drawCompletionBar(for item: GanttisTouch.GanttChartItem, in rectangle: GanttisTouch.Rectangle, fillColor: GanttisTouch.Color, secondaryFillColor: GanttisTouch.Color, strokeColor: GanttisTouch.Color?, strokeWidth: Swift.Double, cornerRadius: Swift.Double, allowsResizing: Swift.Bool, thumbDistance: Swift.Double)
-  func drawBarLabel(for item: GanttisTouch.GanttChartItem, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, alignment: GanttisTouch.TextAlignment)
-  func drawAttachmentLabel(for item: GanttisTouch.GanttChartItem, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color)
+  func drawBarLabel(for item: GanttisTouch.GanttChartItem, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, alignment: GanttisTouch.TextAlignment, font: GanttisTouch.Font)
+  func drawAttachmentLabel(for item: GanttisTouch.GanttChartItem, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, font: GanttisTouch.Font)
   func draw(dependencyLine: GanttisTouch.GanttChartDependencyLine)
   func drawDependencyLine(for dependency: GanttisTouch.GanttChartDependency, as polyline: GanttisTouch.Polyline, color: GanttisTouch.Color, width: Swift.Double, arrowWidth: Swift.Double, arrowLength: Swift.Double, isHighlighted: Swift.Bool, isFocused: Swift.Bool, isSelected: Swift.Bool, highlightWidth: Swift.Double, focusWidth: Swift.Double, selectionWidth: Swift.Double)
   func drawDependencyLineThumb(for item: GanttisTouch.GanttChartItem, type: GanttisTouch.GanttChartDependencyEndType, center: GanttisTouch.Point, radius: Swift.Double, color: GanttisTouch.Color)
@@ -2317,7 +2344,7 @@ public protocol GanttChartContentPresenter : AnyObject {
   func drawTimeArea(for highlighter: GanttisTouch.ScheduleTimeSelector, in rectangle: GanttisTouch.Rectangle, fillColor: GanttisTouch.Color)
   func drawTimeArea(for highlighter: GanttisTouch.TimeSelector, in rectangle: GanttisTouch.Rectangle, backgroundColor: GanttisTouch.Color)
   func drawTimeAreaBorder(for highlighter: GanttisTouch.TimeSelector, in rectangle: GanttisTouch.Rectangle, line: GanttisTouch.Line, lineWidth: Swift.Double, color: GanttisTouch.Color)
-  func drawTimeAreaLabel(for highlighter: GanttisTouch.TimeSelector, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, alignment: GanttisTouch.TextAlignment, verticalAlignment: GanttisTouch.VerticalTextAlignment)
+  func drawTimeAreaLabel(for highlighter: GanttisTouch.TimeSelector, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, alignment: GanttisTouch.TextAlignment, font: GanttisTouch.Font, verticalAlignment: GanttisTouch.VerticalTextAlignment)
   func toolTip(for item: GanttisTouch.GanttChartItem) -> Swift.String?
   func toolTip(for dependency: GanttisTouch.GanttChartDependency) -> Swift.String?
 }
@@ -2549,11 +2576,15 @@ public struct GanttChartContentBaseStyle {
   public var labelForegroundColorForType: [GanttisTouch.GanttChartItemType : GanttisTouch.Color]
   public func labelForegroundColor(for item: GanttisTouch.GanttChartItem) -> GanttisTouch.Color
   public var labelAlignment: GanttisTouch.TextAlignment
+  public var labelFont: GanttisTouch.Font
+  public func labelFont(for item: GanttisTouch.GanttChartItem) -> GanttisTouch.Font
   public var horizontalLabelInset: Swift.Double
   public var milestoneHorizontalLabelInset: Swift.Double
   public var verticalLabelInset: Swift.Double
   public var attachmentForegroundColor: GanttisTouch.Color
   public func attachmentForegroundColor(for item: GanttisTouch.GanttChartItem) -> GanttisTouch.Color
+  public var attachmentFont: GanttisTouch.Font
+  public func attachmentFont(for item: GanttisTouch.GanttChartItem) -> GanttisTouch.Font
   public var horizontalAttachmentInset: Swift.Double
   public var verticalAttachmentInset: Swift.Double
   public var barThumbDistance: Swift.Double
@@ -2583,6 +2614,7 @@ public struct GanttChartContentBaseStyle {
   public var timeAreaBorderLineWidth: Swift.Double
   public var timeAreaForegroundColor: GanttisTouch.Color
   public var timeLabelAlignment: GanttisTouch.TextAlignment
+  public var timeLabelFont: GanttisTouch.Font
   public var verticalTimeLabelAlignment: GanttisTouch.VerticalTextAlignment
   public var horizontalTimeLabelInset: Swift.Double
   public var verticalTimeLabelInset: Swift.Double
@@ -2641,10 +2673,12 @@ public struct GanttChartContentStyle {
   public var labelForegroundColor: GanttisTouch.Color?
   public var labelForegroundColorForType: [GanttisTouch.GanttChartItemType : GanttisTouch.Color]
   public var labelAlignment: GanttisTouch.TextAlignment?
+  public var labelFont: GanttisTouch.Font?
   public var horizontalLabelInset: Swift.Double?
   public var milestoneHorizontalLabelInset: Swift.Double?
   public var verticalLabelInset: Swift.Double?
   public var attachmentForegroundColor: GanttisTouch.Color?
+  public var attachmentFont: GanttisTouch.Font?
   public var horizontalAttachmentInset: Swift.Double?
   public var verticalAttachmentInset: Swift.Double?
   public var barThumbDistance: Swift.Double?
@@ -2672,6 +2706,7 @@ public struct GanttChartContentStyle {
   public var timeAreaBorderLineWidth: Swift.Double?
   public var timeAreaForegroundColor: GanttisTouch.Color?
   public var timeLabelAlignment: GanttisTouch.TextAlignment?
+  public var timeLabelFont: GanttisTouch.Font?
   public var verticalTimeLabelAlignment: GanttisTouch.VerticalTextAlignment?
   public var horizontalTimeLabelInset: Swift.Double?
   public var verticalTimeLabelInset: Swift.Double?
@@ -2734,7 +2769,9 @@ public struct GanttChartItemStyle {
   public var completionBarStrokeColor: GanttisTouch.Color?
   public var completionBarStrokeWidth: Swift.Double?
   public var labelForegroundColor: GanttisTouch.Color?
+  public var labelFont: GanttisTouch.Font?
   public var attachmentForegroundColor: GanttisTouch.Color?
+  public var attachmentFont: GanttisTouch.Font?
 }
 public protocol GanttChartItemStyleSelector {
   func style(for item: GanttisTouch.GanttChartItem) -> GanttisTouch.GanttChartItemStyle?
@@ -2850,6 +2887,7 @@ public struct TimeAreaStyle {
   public var borders: [GanttisTouch.Border]?
   public var foregroundColor: GanttisTouch.Color?
   public var labelAlignment: GanttisTouch.TextAlignment?
+  public var labelFont: GanttisTouch.Font?
   public var verticalLabelAlignment: GanttisTouch.VerticalTextAlignment?
 }
 public struct TimeArea {
