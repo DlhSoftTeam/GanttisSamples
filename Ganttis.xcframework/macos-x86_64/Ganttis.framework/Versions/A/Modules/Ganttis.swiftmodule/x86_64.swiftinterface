@@ -1,20 +1,20 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)
+// swift-compiler-version: Apple Swift version 5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)
 // swift-module-flags: -target x86_64-apple-macos10.13 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Ganttis
 import AppKit
 import Cocoa
 import Foundation
 @_exported import Ganttis
 import Swift
-@objc @IBDesignable open class GanttChartContent : AppKit.NSView, Ganttis.GanttChartContentObserver, Ganttis.GanttChartContentScroller, Ganttis.GanttChartContentPresenter, AppKit.NSGestureRecognizerDelegate {
+@objc @_inheritsConvenienceInitializers @IBDesignable open class GanttChartContent : AppKit.NSView, Ganttis.GanttChartContentObserver, Ganttis.GanttChartContentScroller, Ganttis.GanttChartContentPresenter, AppKit.NSGestureRecognizerDelegate {
   @objc override dynamic public init(frame frameRect: Foundation.NSRect)
   @objc required dynamic public init?(coder decoder: Foundation.NSCoder)
   @objc @IBOutlet weak public var scrollView: AppKit.NSScrollView! {
     get
-    }
+  }
   @objc @IBOutlet weak public var clipView: AppKit.NSClipView! {
     get
-    }
+  }
   @objc public func gestureRecognizer(_: AppKit.NSGestureRecognizer, shouldRecognizeSimultaneouslyWith otherRecognizer: AppKit.NSGestureRecognizer) -> Swift.Bool
   public var controller: Ganttis.GanttChartContentController! {
     get
@@ -312,15 +312,15 @@ public struct GanttChartDependencyLine {
   public let dependency: Ganttis.GanttChartDependency
   public let polyline: Ganttis.Polyline
 }
-@objc @IBDesignable open class GanttChartHeader : AppKit.NSView, Ganttis.GanttChartHeaderObserver, Ganttis.GanttChartHeaderScroller, Ganttis.GanttChartHeaderPresenter {
+@objc @_inheritsConvenienceInitializers @IBDesignable open class GanttChartHeader : AppKit.NSView, Ganttis.GanttChartHeaderObserver, Ganttis.GanttChartHeaderScroller, Ganttis.GanttChartHeaderPresenter {
   @objc override dynamic public init(frame frameRect: Foundation.NSRect)
   @objc required dynamic public init?(coder decoder: Foundation.NSCoder)
   @objc @IBOutlet weak public var scrollView: AppKit.NSScrollView! {
     get
-    }
+  }
   @objc @IBOutlet weak public var clipView: AppKit.NSClipView! {
     get
-    }
+  }
   public var controller: Ganttis.GanttChartHeaderController! {
     get
     set
@@ -367,38 +367,38 @@ public struct RowRange : Swift.Equatable, Swift.Hashable {
   public func contains(_ row: Ganttis.Row) -> Swift.Bool
   public func intersects(_ range: Ganttis.RowRange) -> Swift.Bool
   public func intersecting(_ range: Ganttis.RowRange) -> Ganttis.RowRange?
+  public static func == (a: Ganttis.RowRange, b: Ganttis.RowRange) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
   public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: Ganttis.RowRange, b: Ganttis.RowRange) -> Swift.Bool
 }
 public typealias Row = Swift.Int
 public var license: Swift.String?
-@objc @IBDesignable open class OutlineGanttChart : AppKit.NSView, AppKit.NSOutlineViewDataSource, Ganttis.GanttChartCollectionProvider, Ganttis.GanttChartItemHierarchyProvider, Ganttis.GanttChartObserver, Ganttis.GanttChartContentActivator, Ganttis.GanttChartItemObserver {
+@objc @_inheritsConvenienceInitializers @IBDesignable open class OutlineGanttChart : AppKit.NSView, AppKit.NSOutlineViewDataSource, Ganttis.GanttChartCollectionProvider, Ganttis.GanttChartItemHierarchyProvider, Ganttis.GanttChartObserver, Ganttis.GanttChartContentActivator, Ganttis.GanttChartItemObserver {
   @objc override dynamic public init(frame frameRect: Foundation.NSRect)
   @objc required dynamic public init?(coder decoder: Foundation.NSCoder)
   @objc @IBOutlet weak public var splitView: AppKit.NSSplitView! {
     get
-    }
+  }
   @objc @IBOutlet weak public var outlineHeaderSpacingBox: AppKit.NSBox! {
     get
-    }
+  }
   @objc @IBOutlet weak public var outlineHeaderSpacingLabel: AppKit.NSTextField! {
     get
-    }
+  }
   @objc @IBOutlet weak public var outlineScrollView: AppKit.NSScrollView! {
     get
-    }
+  }
   @objc @IBOutlet weak public var outlineClipView: AppKit.NSClipView! {
     get
-    }
+  }
   @objc @IBOutlet weak public var outlineView: AppKit.NSOutlineView! {
     get
-    }
+  }
   @objc @IBOutlet weak public var ganttChart: Ganttis.GanttChart! {
     get
-    }
+  }
   @objc override dynamic open func updateConstraints()
   @objc override dynamic open func layout()
   @objc override dynamic open func prepareForInterfaceBuilder()
@@ -898,10 +898,10 @@ public class GanttChartItemSource : Ganttis.GanttChartItemManager {
   public init(items: [Ganttis.GanttChartItem]? = nil, dependencies: [Ganttis.GanttChartDependency]? = nil, schedule: Ganttis.ScheduleDefinition? = nil, behavior: Ganttis.GanttChartItemBehavior? = nil)
   public var items: [Ganttis.GanttChartItem] {
     get
-    }
+  }
   public var dependencies: [Ganttis.GanttChartDependency] {
     get
-    }
+  }
   override public var sourceTotalRowCount: Swift.Int {
     get
   }
@@ -973,16 +973,16 @@ public class GanttChartItemSource : Ganttis.GanttChartItemManager {
     get
   }
   public func acceptChanges()
-  override public init(collectionProvider: Ganttis.GanttChartCollectionProvider? = super, schedule: Ganttis.ScheduleDefinition? = super, behavior: Ganttis.GanttChartItemBehavior? = super)
   @objc deinit
+  override public init(collectionProvider: Ganttis.GanttChartCollectionProvider? = super, schedule: Ganttis.ScheduleDefinition? = super, behavior: Ganttis.GanttChartItemBehavior? = super)
 }
 public enum Mode : Swift.Equatable, Swift.Hashable {
   case light, dark
+  public static func == (a: Ganttis.Mode, b: Ganttis.Mode) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
   public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: Ganttis.Mode, b: Ganttis.Mode) -> Swift.Bool
 }
 public protocol ModeProvider : AnyObject {
   var mode: Ganttis.Mode { get }
@@ -1104,11 +1104,11 @@ public struct Rectangle : Swift.Equatable, Swift.Hashable {
   public func intersects(_ rectangle: Ganttis.Rectangle) -> Swift.Bool
   public func intersects(_ line: Ganttis.Line) -> Swift.Bool
   public func intersecting(_ rectangle: Ganttis.Rectangle) -> Ganttis.Rectangle?
+  public static func == (a: Ganttis.Rectangle, b: Ganttis.Rectangle) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
   public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: Ganttis.Rectangle, b: Ganttis.Rectangle) -> Swift.Bool
 }
 public typealias Polyline = [Ganttis.Point]
 public struct Point : Swift.Equatable, Swift.Hashable {
@@ -1123,11 +1123,11 @@ public struct Point : Swift.Equatable, Swift.Hashable {
   public func isClose(to point: Ganttis.Point, maxDistance: Swift.Double) -> Swift.Bool
   public func distance(to line: Ganttis.Line) -> Swift.Double
   public func distance(to point: Ganttis.Point) -> Swift.Double
+  public static func == (a: Ganttis.Point, b: Ganttis.Point) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
   public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: Ganttis.Point, b: Ganttis.Point) -> Swift.Bool
 }
 extension Array where Element == Ganttis.Point {
   public var lines: [Ganttis.Line] {
@@ -1170,11 +1170,11 @@ public struct Size : Swift.Equatable, Swift.Hashable {
   public var width: Swift.Double, height: Swift.Double
   public static let zero: Ganttis.Size
   public func increasedBy(dx: Swift.Double = 0, dy: Swift.Double = 0) -> Ganttis.Size
+  public static func == (a: Ganttis.Size, b: Ganttis.Size) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
   public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: Ganttis.Size, b: Ganttis.Size) -> Swift.Bool
 }
 public struct Color : Swift.Equatable, Swift.Hashable {
   public init(red: Swift.Double = 0, green: Swift.Double = 0, blue: Swift.Double = 0, alpha: Swift.Double = 1)
@@ -1375,8 +1375,8 @@ public class ScheduleIntersection : Ganttis.ScheduleDefinition {
   override public var hasExcludedIntervals: Swift.Bool {
     get
   }
-  override public init(provider: Ganttis.ScheduleDefinitionProvider? = super)
   @objc deinit
+  override public init(provider: Ganttis.ScheduleDefinitionProvider? = super)
 }
 extension WeekRange {
   public static let continuous: Ganttis.WeekRange
@@ -1390,15 +1390,15 @@ extension Double {
   public init(from value: Swift.Double, in unit: Ganttis.TimeUnit, for schedule: Ganttis.ScheduleDefinition)
   public func value(in unit: Ganttis.TimeUnit, for schedule: Ganttis.ScheduleDefinition) -> Swift.Double
 }
-@objc @IBDesignable open class GanttChart : AppKit.NSView, Ganttis.GanttChartObserver, Ganttis.GanttChartScroller, Ganttis.GanttChartPresenter {
+@objc @_inheritsConvenienceInitializers @IBDesignable open class GanttChart : AppKit.NSView, Ganttis.GanttChartObserver, Ganttis.GanttChartScroller, Ganttis.GanttChartPresenter {
   @objc override dynamic public init(frame frameRect: Foundation.NSRect)
   @objc required dynamic public init?(coder decoder: Foundation.NSCoder)
   @objc @IBOutlet weak public var header: Ganttis.GanttChartHeader! {
     get
-    }
+  }
   @objc @IBOutlet weak public var content: Ganttis.GanttChartContent! {
     get
-    }
+  }
   public var controller: Ganttis.GanttChartController! {
     get
     set
@@ -1568,7 +1568,7 @@ public struct GanttChartContentSettings {
   }
   public var actualStyle: Ganttis.GanttChartContentBaseStyle {
     get
-    }
+  }
   public var strings: Ganttis.GanttChartContentStrings
 }
 public struct GanttChartContentBaseStyle {
@@ -1905,20 +1905,20 @@ public class GanttChartController {
   weak public var rangeObserver: Ganttis.GanttChartRangeObserver?
   weak public var timelineObserver: Ganttis.GanttChartTimelineObserver?
   weak public var presenter: Ganttis.GanttChartPresenter?
-  public class HeaderObserverAdapter : Ganttis.GanttChartHeaderRowArrayObserver, Ganttis.GanttChartHeaderTimelineObserver {
+  @_hasMissingDesignatedInitializers public class HeaderObserverAdapter : Ganttis.GanttChartHeaderRowArrayObserver, Ganttis.GanttChartHeaderTimelineObserver {
     public func rowCountDidChange()
     public func timelineDidChange()
     public func visibleTimelineDidChange()
     @objc deinit
   }
-  public class ContentObserverAdapter : Ganttis.GanttChartContentRangeObserver, Ganttis.GanttChartContentTimelineObserver {
+  @_hasMissingDesignatedInitializers public class ContentObserverAdapter : Ganttis.GanttChartContentRangeObserver, Ganttis.GanttChartContentTimelineObserver {
     public func totalRowCountDidChange()
     public func visibleRangeDidChange()
     public func timelineDidChange()
     public func visibleTimelineDidChange()
     @objc deinit
   }
-  public class HeaderPresenterAdapter : Ganttis.GanttChartHeaderPresenter {
+  @_hasMissingDesignatedInitializers public class HeaderPresenterAdapter : Ganttis.GanttChartHeaderPresenter {
     public func drawBackground(color: Ganttis.Color, size: Ganttis.Size)
     public func drawBorder(in rectangle: Ganttis.Rectangle, line: Ganttis.Line, lineWidth: Swift.Double, color: Ganttis.Color)
     public func drawTimeArea(for highlighter: Ganttis.ScheduleTimeSelector, in rectangle: Ganttis.Rectangle, fillColor: Ganttis.Color)
@@ -1927,7 +1927,7 @@ public class GanttChartController {
     public func drawCellLabel(for selector: Ganttis.TimeSelector, of row: Ganttis.GanttChartHeaderRow, in rectangle: Ganttis.Rectangle, text: Swift.String, foregroundColor: Ganttis.Color, alignment: Ganttis.TextAlignment, font: Ganttis.Font, verticalAlignment: Ganttis.VerticalTextAlignment)
     @objc deinit
   }
-  public class ContentPresenterAdapter : Ganttis.GanttChartContentPresenter {
+  @_hasMissingDesignatedInitializers public class ContentPresenterAdapter : Ganttis.GanttChartContentPresenter {
     public func drawBackground(color: Ganttis.Color, size: Ganttis.Size)
     public func drawBorder(in rectangle: Ganttis.Rectangle, line: Ganttis.Line, lineWidth: Swift.Double, color: Ganttis.Color)
     public func drawBackground(for row: Ganttis.Row, in rectangle: Ganttis.Rectangle, color: Ganttis.Color)
@@ -2104,13 +2104,13 @@ public class GanttChartHeaderController {
   public func endDragging()
   public var draggingFromX: Swift.Double? {
     get
-    }
+  }
   public var zoomingFrom: Swift.Double? {
     get
-    }
+  }
   public var zoomingTime: Ganttis.Time? {
     get
-    }
+  }
   public func scroll(to interval: Ganttis.TimeRange, margin: Swift.Double? = nil)
   public func scroll(to time: Ganttis.Time, margin: Swift.Double? = nil)
   public func scrollBy(dx: Swift.Double = 0)
@@ -2320,7 +2320,7 @@ public struct GanttChartHeaderSettings {
   }
   public var actualStyle: Ganttis.GanttChartHeaderBaseStyle {
     get
-    }
+  }
 }
 public struct GanttChartHeaderBaseStyle {
   public init()
@@ -2766,11 +2766,11 @@ public struct TimeRange : Swift.Equatable, Swift.Hashable {
     get
   }
   public init(for timeZone: Foundation.TimeZone? = nil)
+  public static func == (a: Ganttis.TimeRange, b: Ganttis.TimeRange) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
   public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: Ganttis.TimeRange, b: Ganttis.TimeRange) -> Swift.Bool
 }
 public typealias Week = Swift.Int
 public typealias DayOfWeek = Swift.Int
@@ -2962,7 +2962,8 @@ public struct GanttChartItemHierarchicalRelation {
 public struct GanttChartItemAutoSchedulingBehavior : Ganttis.GanttChartItemBehavior {
   public init(applyingToUpdatingItems: Swift.Bool? = nil, aggregatingSources: Swift.Bool? = nil, preservingDurations: Swift.Bool? = nil, lagProvider: Ganttis.GanttChartDependencyLagProvider? = nil)
   public init(applyingToUpdatingItems: Swift.Bool? = nil, aggregatingSources: Swift.Bool? = nil, preservingDurations: Swift.Bool? = nil, lags: [Ganttis.GanttChartDependencyLagDefinition])
-  public var applyingToUpdatingItems: Swift.Bool, aggregatingSources: Swift.Bool, preservingDurations: Swift.Bool
+  public var applyingToUpdatingItems: Swift.Bool, preservingDurations: Swift.Bool
+  public var aggregatingSources: Swift.Bool?
   public let lagProvider: Ganttis.GanttChartDependencyLagProvider?
   public func itemWasAdded(item: Ganttis.GanttChartItem, items: [Ganttis.GanttChartItem], dependencies: [Ganttis.GanttChartDependency], schedule: Ganttis.ScheduleDefinition) -> [Ganttis.GanttChartItemUpdateAction]
   public func timeDidChange(for item: Ganttis.GanttChartItem, from originalValue: Ganttis.TimeRange, up: Swift.Bool, down: Swift.Bool, items: [Ganttis.GanttChartItem], dependencies: [Ganttis.GanttChartDependency], schedule: Ganttis.ScheduleDefinition) -> [Ganttis.GanttChartItemUpdateAction]
@@ -2970,23 +2971,29 @@ public struct GanttChartItemAutoSchedulingBehavior : Ganttis.GanttChartItemBehav
 }
 public protocol GanttChartDependencyLagProvider {
   func lag(for dependency: Ganttis.GanttChartDependency) -> Foundation.TimeInterval?
+  func shouldExclude(dependency: Ganttis.GanttChartDependency) -> Swift.Bool
 }
 public struct GanttChartDependencyLagSource : Ganttis.GanttChartDependencyLagProvider {
-  public init(function: @escaping Ganttis.GanttChartDependencyLagFunction)
+  public init(function: @escaping Ganttis.GanttChartDependencyLagFunction, exclusionFunction: @escaping Ganttis.GanttChartDependencyExclusionFunction)
   public let function: Ganttis.GanttChartDependencyLagFunction
+  public let exclusionFunction: Ganttis.GanttChartDependencyExclusionFunction
   public func lag(for dependency: Ganttis.GanttChartDependency) -> Foundation.TimeInterval?
+  public func shouldExclude(dependency: Ganttis.GanttChartDependency) -> Swift.Bool
 }
 public typealias GanttChartDependencyLagFunction = (Ganttis.GanttChartDependency) -> Foundation.TimeInterval?
+public typealias GanttChartDependencyExclusionFunction = (Ganttis.GanttChartDependency) -> Swift.Bool
 public class GanttChartDependencyLagSet : Ganttis.GanttChartDependencyLagProvider {
   public init(_ lags: [Ganttis.GanttChartDependencyLagDefinition] = [])
   public var lags: [Ganttis.GanttChartDependencyLagDefinition]
   public func lag(for dependency: Ganttis.GanttChartDependency) -> Foundation.TimeInterval?
+  public func shouldExclude(dependency: Ganttis.GanttChartDependency) -> Swift.Bool
   @objc deinit
 }
 public struct GanttChartDependencyLagDefinition {
-  public init(dependency: Ganttis.GanttChartDependency, lag: Foundation.TimeInterval)
+  public init(dependency: Ganttis.GanttChartDependency, lag: Foundation.TimeInterval, shouldExclude: Swift.Bool? = nil)
   public var dependency: Ganttis.GanttChartDependency
   public var lag: Foundation.TimeInterval
+  public var shouldExclude: Swift.Bool
 }
 public struct GanttChartItemConstraintBehavior : Ganttis.GanttChartItemBehavior {
   public init(provider: Ganttis.GanttChartItemConstraintProvider, preservingDurations: Swift.Bool? = nil)
@@ -3197,15 +3204,16 @@ public class GanttChartContentController : Ganttis.GanttChartCollectionObserver,
   public func beginDragging(at point: Ganttis.Point, acceptScrolling: Swift.Bool = true)
   public func continueDragging(to point: Ganttis.Point)
   public func endDragging()
+  public func cancelDragging()
   public var draggingOperation: Ganttis.GanttChartDraggingOperation? {
     get
-    }
+  }
   public var draggingCursor: Ganttis.Cursor? {
     get
-    }
+  }
   public var draggingCompletion: Ganttis.GanttChartDraggingCompletion? {
     get
-    }
+  }
   public func beginZooming()
   public func continueZooming(to scale: Swift.Double)
   public func endZooming()

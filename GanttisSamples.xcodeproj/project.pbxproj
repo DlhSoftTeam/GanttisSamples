@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF1D3E6D244BAEC400EA7149 /* Ganttis.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1D3E63244BAEBE00EA7149 /* Ganttis.xcframework */; };
+		BF1D3E6E244BAEC400EA7149 /* Ganttis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF1D3E63244BAEBE00EA7149 /* Ganttis.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BF1D3E6F244BAEC900EA7149 /* Ganttis.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1D3E63244BAEBE00EA7149 /* Ganttis.xcframework */; };
+		BF1D3E70244BAEC900EA7149 /* Ganttis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF1D3E63244BAEBE00EA7149 /* Ganttis.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BF1D3E71244BAECE00EA7149 /* Ganttis.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1D3E63244BAEBE00EA7149 /* Ganttis.xcframework */; };
+		BF1D3E72244BAECE00EA7149 /* Ganttis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF1D3E63244BAEBE00EA7149 /* Ganttis.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BF1D3E73244BAED200EA7149 /* Ganttis.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1D3E63244BAEBE00EA7149 /* Ganttis.xcframework */; };
+		BF1D3E74244BAED200EA7149 /* Ganttis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF1D3E63244BAEBE00EA7149 /* Ganttis.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BF1D3E75244BAED600EA7149 /* Ganttis.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1D3E63244BAEBE00EA7149 /* Ganttis.xcframework */; };
+		BF1D3E76244BAED600EA7149 /* Ganttis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF1D3E63244BAEBE00EA7149 /* Ganttis.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BF1D3E77244BAEDA00EA7149 /* Ganttis.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1D3E63244BAEBE00EA7149 /* Ganttis.xcframework */; };
+		BF1D3E78244BAEDA00EA7149 /* Ganttis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF1D3E63244BAEBE00EA7149 /* Ganttis.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BF1D3E79244BAEDE00EA7149 /* Ganttis.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1D3E63244BAEBE00EA7149 /* Ganttis.xcframework */; };
+		BF1D3E7A244BAEDE00EA7149 /* Ganttis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF1D3E63244BAEBE00EA7149 /* Ganttis.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BF1D3E7B244BAEE400EA7149 /* Ganttis.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1D3E63244BAEBE00EA7149 /* Ganttis.xcframework */; };
+		BF1D3E7C244BAEE400EA7149 /* Ganttis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF1D3E63244BAEBE00EA7149 /* Ganttis.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BF1D3E7D244BAEE800EA7149 /* Ganttis.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1D3E63244BAEBE00EA7149 /* Ganttis.xcframework */; };
+		BF1D3E7E244BAEE800EA7149 /* Ganttis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF1D3E63244BAEBE00EA7149 /* Ganttis.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		BF4920CF235AEB39008F9A5F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4920CE235AEB39008F9A5F /* AppDelegate.m */; };
 		BF4920D2235AEB39008F9A5F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4920D1235AEB39008F9A5F /* ViewController.m */; };
 		BF4920D4235AEB3D008F9A5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4920D3235AEB3D008F9A5F /* Assets.xcassets */; };
@@ -15,24 +33,6 @@
 		BF4920F6235AED8D008F9A5F /* GanttChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4920F4235AED8D008F9A5F /* GanttChartViewController.swift */; };
 		BF4920F7235AED8D008F9A5F /* GanttChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF4920F5235AED8D008F9A5F /* GanttChartViewController.xib */; };
 		BF4920F9235AEEDA008F9A5F /* Licensing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4920F8235AEEDA008F9A5F /* Licensing.swift */; };
-		BF586EB5239C0BC7008C4F1B /* Ganttis.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF586EAB239C0BB9008C4F1B /* Ganttis.xcframework */; };
-		BF586EB6239C0BC7008C4F1B /* Ganttis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF586EAB239C0BB9008C4F1B /* Ganttis.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		BF586EB7239C0BCA008C4F1B /* Ganttis.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF586EAB239C0BB9008C4F1B /* Ganttis.xcframework */; };
-		BF586EB8239C0BCA008C4F1B /* Ganttis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF586EAB239C0BB9008C4F1B /* Ganttis.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		BF586EB9239C0BCC008C4F1B /* Ganttis.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF586EAB239C0BB9008C4F1B /* Ganttis.xcframework */; };
-		BF586EBA239C0BCC008C4F1B /* Ganttis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF586EAB239C0BB9008C4F1B /* Ganttis.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		BF586EBB239C0BCF008C4F1B /* Ganttis.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF586EAB239C0BB9008C4F1B /* Ganttis.xcframework */; };
-		BF586EBC239C0BCF008C4F1B /* Ganttis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF586EAB239C0BB9008C4F1B /* Ganttis.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		BF586EBD239C0BD1008C4F1B /* Ganttis.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF586EAB239C0BB9008C4F1B /* Ganttis.xcframework */; };
-		BF586EBE239C0BD1008C4F1B /* Ganttis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF586EAB239C0BB9008C4F1B /* Ganttis.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		BF586EBF239C0BD5008C4F1B /* Ganttis.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF586EAB239C0BB9008C4F1B /* Ganttis.xcframework */; };
-		BF586EC0239C0BD5008C4F1B /* Ganttis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF586EAB239C0BB9008C4F1B /* Ganttis.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		BF586EC1239C0BD8008C4F1B /* Ganttis.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF586EAB239C0BB9008C4F1B /* Ganttis.xcframework */; };
-		BF586EC2239C0BD8008C4F1B /* Ganttis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF586EAB239C0BB9008C4F1B /* Ganttis.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		BF586EC3239C0BDA008C4F1B /* Ganttis.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF586EAB239C0BB9008C4F1B /* Ganttis.xcframework */; };
-		BF586EC4239C0BDA008C4F1B /* Ganttis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF586EAB239C0BB9008C4F1B /* Ganttis.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		BF586EC5239C0BDD008C4F1B /* Ganttis.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF586EAB239C0BB9008C4F1B /* Ganttis.xcframework */; };
-		BF586EC6239C0BDD008C4F1B /* Ganttis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF586EAB239C0BB9008C4F1B /* Ganttis.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		BF59EF67236D6BF9001618EC /* GanttChartAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59EF66236D6BF9001618EC /* GanttChartAdapter.swift */; };
 		BF59EF69236D6C41001618EC /* GanttChartAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59EF68236D6C41001618EC /* GanttChartAdapter.swift */; };
 		BF890ED3235E132D00D3FCF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF890ED2235E132D00D3FCF0 /* AppDelegate.m */; };
@@ -89,7 +89,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BF586EBA239C0BCC008C4F1B /* Ganttis.xcframework in Embed Frameworks */,
+				BF1D3E74244BAED200EA7149 /* Ganttis.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,7 +100,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BF586EC4239C0BDA008C4F1B /* Ganttis.xcframework in Embed Frameworks */,
+				BF1D3E7E244BAEE800EA7149 /* Ganttis.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,7 +111,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BF586EC0239C0BD5008C4F1B /* Ganttis.xcframework in Embed Frameworks */,
+				BF1D3E7A244BAEDE00EA7149 /* Ganttis.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,7 +122,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BF586EB6239C0BC7008C4F1B /* Ganttis.xcframework in Embed Frameworks */,
+				BF1D3E6E244BAEC400EA7149 /* Ganttis.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,7 +133,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BF586EC6239C0BDD008C4F1B /* Ganttis.xcframework in Embed Frameworks */,
+				BF1D3E70244BAEC900EA7149 /* Ganttis.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,7 +144,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BF586EBC239C0BCF008C4F1B /* Ganttis.xcframework in Embed Frameworks */,
+				BF1D3E76244BAED600EA7149 /* Ganttis.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,7 +155,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BF586EC2239C0BD8008C4F1B /* Ganttis.xcframework in Embed Frameworks */,
+				BF1D3E7C244BAEE400EA7149 /* Ganttis.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,7 +166,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BF586EBE239C0BD1008C4F1B /* Ganttis.xcframework in Embed Frameworks */,
+				BF1D3E78244BAEDA00EA7149 /* Ganttis.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,7 +177,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BF586EB8239C0BCA008C4F1B /* Ganttis.xcframework in Embed Frameworks */,
+				BF1D3E72244BAECE00EA7149 /* Ganttis.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,6 +185,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BF1D3E63244BAEBE00EA7149 /* Ganttis.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Ganttis.xcframework; sourceTree = "<group>"; };
 		BF4920CB235AEB39008F9A5F /* GanttChart.ObjC.macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GanttChart.ObjC.macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF4920CD235AEB39008F9A5F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BF4920CE235AEB39008F9A5F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -198,7 +199,6 @@
 		BF4920F4235AED8D008F9A5F /* GanttChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GanttChartViewController.swift; sourceTree = "<group>"; };
 		BF4920F5235AED8D008F9A5F /* GanttChartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GanttChartViewController.xib; sourceTree = "<group>"; };
 		BF4920F8235AEEDA008F9A5F /* Licensing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Licensing.swift; sourceTree = "<group>"; };
-		BF586EAB239C0BB9008C4F1B /* Ganttis.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Ganttis.xcframework; sourceTree = "<group>"; };
 		BF59EF66236D6BF9001618EC /* GanttChartAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GanttChartAdapter.swift; sourceTree = "<group>"; };
 		BF59EF68236D6C41001618EC /* GanttChartAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GanttChartAdapter.swift; sourceTree = "<group>"; };
 		BF703E4523537FAE00BCC1E4 /* GanttChart.GetStarted.iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GanttChart.GetStarted.iOS.entitlements; sourceTree = "<group>"; };
@@ -279,7 +279,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF586EB9239C0BCC008C4F1B /* Ganttis.xcframework in Frameworks */,
+				BF1D3E73244BAED200EA7149 /* Ganttis.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +287,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF586EC3239C0BDA008C4F1B /* Ganttis.xcframework in Frameworks */,
+				BF1D3E7D244BAEE800EA7149 /* Ganttis.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +295,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF586EBF239C0BD5008C4F1B /* Ganttis.xcframework in Frameworks */,
+				BF1D3E79244BAEDE00EA7149 /* Ganttis.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +303,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF586EB5239C0BC7008C4F1B /* Ganttis.xcframework in Frameworks */,
+				BF1D3E6D244BAEC400EA7149 /* Ganttis.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,7 +311,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF586EC5239C0BDD008C4F1B /* Ganttis.xcframework in Frameworks */,
+				BF1D3E6F244BAEC900EA7149 /* Ganttis.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +319,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF586EBB239C0BCF008C4F1B /* Ganttis.xcframework in Frameworks */,
+				BF1D3E75244BAED600EA7149 /* Ganttis.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,7 +327,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF586EC1239C0BD8008C4F1B /* Ganttis.xcframework in Frameworks */,
+				BF1D3E7B244BAEE400EA7149 /* Ganttis.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,7 +335,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF586EBD239C0BD1008C4F1B /* Ganttis.xcframework in Frameworks */,
+				BF1D3E77244BAEDA00EA7149 /* Ganttis.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +343,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF586EB7239C0BCA008C4F1B /* Ganttis.xcframework in Frameworks */,
+				BF1D3E71244BAECE00EA7149 /* Ganttis.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,7 +560,7 @@
 		BFF1EA8C2362E47200624DBE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BF586EAB239C0BB9008C4F1B /* Ganttis.xcframework */,
+				BF1D3E63244BAEBE00EA7149 /* Ganttis.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
