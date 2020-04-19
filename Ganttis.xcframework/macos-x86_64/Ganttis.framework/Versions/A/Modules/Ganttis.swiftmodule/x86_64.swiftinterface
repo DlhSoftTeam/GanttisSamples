@@ -2973,6 +2973,9 @@ public protocol GanttChartDependencyLagProvider {
   func lag(for dependency: Ganttis.GanttChartDependency) -> Foundation.TimeInterval?
   func shouldExclude(dependency: Ganttis.GanttChartDependency) -> Swift.Bool
 }
+extension GanttChartDependencyLagProvider {
+  public func shouldExclude(dependency: Ganttis.GanttChartDependency) -> Swift.Bool
+}
 public struct GanttChartDependencyLagSource : Ganttis.GanttChartDependencyLagProvider {
   public init(function: @escaping Ganttis.GanttChartDependencyLagFunction, exclusionFunction: @escaping Ganttis.GanttChartDependencyExclusionFunction)
   public let function: Ganttis.GanttChartDependencyLagFunction
