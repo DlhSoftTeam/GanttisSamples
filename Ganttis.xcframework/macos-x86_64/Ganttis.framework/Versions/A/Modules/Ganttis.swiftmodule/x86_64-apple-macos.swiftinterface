@@ -488,6 +488,8 @@ public var license: Swift.String?
   public func zIndexDidChange(for dependency: Ganttis.GanttChartDependency)
   public func visibilityDidChange(for item: Ganttis.GanttChartItem)
   public func visibilityDidChange(for dependency: Ganttis.GanttChartDependency)
+  public func ganttChartItem(for outlineChartItem: Ganttis.OutlineGanttChartItem) -> Ganttis.GanttChartItem?
+  public func ganttChartDependency(for outlineChartDependency: Ganttis.OutlineGanttChartDependency) -> Ganttis.GanttChartDependency?
   weak public var ganttChartObserver: Ganttis.GanttChartObserver?
   weak public var ganttChartContentActivator: Ganttis.GanttChartContentActivator?
   weak public var ganttChartItemObserver: Ganttis.GanttChartItemObserver?
