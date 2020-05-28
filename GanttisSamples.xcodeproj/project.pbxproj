@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BF4920CF235AEB39008F9A5F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4920CE235AEB39008F9A5F /* AppDelegate.m */; };
-		BF4920D2235AEB39008F9A5F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4920D1235AEB39008F9A5F /* ViewController.m */; };
 		BF4920D4235AEB3D008F9A5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4920D3235AEB3D008F9A5F /* Assets.xcassets */; };
 		BF4920D7235AEB3D008F9A5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF4920D5235AEB3D008F9A5F /* Main.storyboard */; };
 		BF4920DA235AEB3D008F9A5F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4920D9235AEB3D008F9A5F /* main.m */; };
@@ -18,7 +17,6 @@
 		BF59EF67236D6BF9001618EC /* GanttChartAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59EF66236D6BF9001618EC /* GanttChartAdapter.swift */; };
 		BF59EF69236D6C41001618EC /* GanttChartAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59EF68236D6C41001618EC /* GanttChartAdapter.swift */; };
 		BF890ED3235E132D00D3FCF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF890ED2235E132D00D3FCF0 /* AppDelegate.m */; };
-		BF890ED9235E132D00D3FCF0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF890ED8235E132D00D3FCF0 /* ViewController.m */; };
 		BF890EDC235E132D00D3FCF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF890EDA235E132D00D3FCF0 /* Main.storyboard */; };
 		BF890EDE235E132E00D3FCF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF890EDD235E132E00D3FCF0 /* Assets.xcassets */; };
 		BF890EE1235E132E00D3FCF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF890EDF235E132E00D3FCF0 /* LaunchScreen.storyboard */; };
@@ -188,8 +186,6 @@
 		BF4920CB235AEB39008F9A5F /* GanttChart.ObjC.macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GanttChart.ObjC.macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF4920CD235AEB39008F9A5F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BF4920CE235AEB39008F9A5F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BF4920D0235AEB39008F9A5F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BF4920D1235AEB39008F9A5F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BF4920D3235AEB3D008F9A5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF4920D6235AEB3D008F9A5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF4920D8235AEB3D008F9A5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -204,8 +200,6 @@
 		BF890ECF235E132D00D3FCF0 /* GanttChart.ObjC.iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GanttChart.ObjC.iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF890ED1235E132D00D3FCF0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BF890ED2235E132D00D3FCF0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BF890ED7235E132D00D3FCF0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BF890ED8235E132D00D3FCF0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BF890EDB235E132D00D3FCF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF890EDD235E132E00D3FCF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF890EE0235E132E00D3FCF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -355,8 +349,6 @@
 			children = (
 				BF4920CD235AEB39008F9A5F /* AppDelegate.h */,
 				BF4920CE235AEB39008F9A5F /* AppDelegate.m */,
-				BF4920D0235AEB39008F9A5F /* ViewController.h */,
-				BF4920D1235AEB39008F9A5F /* ViewController.m */,
 				BF4920D3235AEB3D008F9A5F /* Assets.xcassets */,
 				BF4920D5235AEB3D008F9A5F /* Main.storyboard */,
 				BF4920D8235AEB3D008F9A5F /* Info.plist */,
@@ -400,8 +392,6 @@
 			children = (
 				BF890ED1235E132D00D3FCF0 /* AppDelegate.h */,
 				BF890ED2235E132D00D3FCF0 /* AppDelegate.m */,
-				BF890ED7235E132D00D3FCF0 /* ViewController.h */,
-				BF890ED8235E132D00D3FCF0 /* ViewController.m */,
 				BF890EDA235E132D00D3FCF0 /* Main.storyboard */,
 				BF890EDD235E132E00D3FCF0 /* Assets.xcassets */,
 				BF890EDF235E132E00D3FCF0 /* LaunchScreen.storyboard */,
@@ -906,7 +896,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF4920D2235AEB39008F9A5F /* ViewController.m in Sources */,
 				BF4920DA235AEB3D008F9A5F /* main.m in Sources */,
 				BF4920CF235AEB39008F9A5F /* AppDelegate.m in Sources */,
 				BF4920F6235AED8D008F9A5F /* GanttChartViewController.swift in Sources */,
@@ -919,7 +908,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF890EF2235E13C800D3FCF0 /* GanttChartViewController.swift in Sources */,
-				BF890ED9235E132D00D3FCF0 /* ViewController.m in Sources */,
 				BF890ED3235E132D00D3FCF0 /* AppDelegate.m in Sources */,
 				BF890EE4235E132E00D3FCF0 /* main.m in Sources */,
 				BF890EEB235E136200D3FCF0 /* Licensing.swift in Sources */,
