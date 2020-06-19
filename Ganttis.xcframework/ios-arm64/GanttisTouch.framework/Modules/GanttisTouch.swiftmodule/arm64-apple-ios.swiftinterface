@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)
+// swift-compiler-version: Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
 // swift-module-flags: -target arm64-apple-ios11.3 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GanttisTouch
 import Foundation
 @_exported import GanttisTouch
@@ -234,6 +234,7 @@ public struct GanttChartItemConstraints {
   open func drawTimeAreaBorder(for highlighter: GanttisTouch.TimeSelector, in rectangle: CoreGraphics.CGRect, p1: CoreGraphics.CGPoint, p2: CoreGraphics.CGPoint, lineWidth: CoreGraphics.CGFloat, color: UIKit.UIColor)
   public func drawTimeAreaLabel(for highlighter: GanttisTouch.TimeSelector, in rectangle: GanttisTouch.Rectangle, text: Swift.String, foregroundColor: GanttisTouch.Color, alignment: GanttisTouch.TextAlignment, font: GanttisTouch.Font, verticalAlignment: GanttisTouch.VerticalTextAlignment)
   open func drawTimeAreaLabel(for highlighter: GanttisTouch.TimeSelector, in rectangle: CoreGraphics.CGRect, text: Swift.String, foregroundColor: UIKit.UIColor, alignment: UIKit.NSTextAlignment, font: UIKit.UIFont, verticalAlignment: GanttisTouch.VerticalTextAlignment)
+  public func reloadData()
   open func scrollTo(startX: Swift.Double, finishX: Swift.Double)
   open func scrollVerticallyTo(startY: Swift.Double, finishY: Swift.Double)
   @objc deinit
@@ -1513,6 +1514,7 @@ public class AppearanceModeProvider : GanttisTouch.ModeProvider {
   open func drawContentTimeAreaLabel(for highlighter: GanttisTouch.TimeSelector, in rectangle: CoreGraphics.CGRect, text: Swift.String, foregroundColor: UIKit.UIColor, alignment: UIKit.NSTextAlignment, font: UIKit.UIFont, verticalAlignment: GanttisTouch.VerticalTextAlignment)
   open func toolTip(for item: GanttisTouch.GanttChartItem) -> Swift.String?
   open func toolTip(for dependency: GanttisTouch.GanttChartDependency) -> Swift.String?
+  public func reloadData()
   public func scrollTo(startX: Swift.Double, finishX: Swift.Double)
   public func scrollVerticallyTo(startY: Swift.Double, finishY: Swift.Double)
   @objc deinit

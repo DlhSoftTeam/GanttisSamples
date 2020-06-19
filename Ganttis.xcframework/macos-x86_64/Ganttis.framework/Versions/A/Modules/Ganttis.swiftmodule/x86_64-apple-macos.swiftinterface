@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)
+// swift-compiler-version: Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
 // swift-module-flags: -target x86_64-apple-macos10.13 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Ganttis
 import AppKit
 import Cocoa
@@ -75,6 +75,7 @@ import Swift
   open func mouseExited()
   open func toolTip(for item: Ganttis.GanttChartItem) -> Swift.String?
   open func toolTip(for dependency: Ganttis.GanttChartDependency) -> Swift.String?
+  public func reloadData()
   open func scrollTo(startX: Swift.Double, finishX: Swift.Double)
   open func scrollVerticallyTo(startY: Swift.Double, finishY: Swift.Double)
   @objc override dynamic open func menu(for event: AppKit.NSEvent) -> AppKit.NSMenu?
@@ -1460,6 +1461,7 @@ extension Double {
   open func drawContentTimeAreaLabel(for highlighter: Ganttis.TimeSelector, in rectangle: Foundation.NSRect, text: Swift.String, foregroundColor: AppKit.NSColor, alignment: AppKit.NSTextAlignment, font: AppKit.NSFont, verticalAlignment: Ganttis.VerticalTextAlignment)
   open func toolTip(for item: Ganttis.GanttChartItem) -> Swift.String?
   open func toolTip(for dependency: Ganttis.GanttChartDependency) -> Swift.String?
+  public func reloadData()
   public func scrollTo(startX: Swift.Double, finishX: Swift.Double)
   public func scrollVerticallyTo(startY: Swift.Double, finishY: Swift.Double)
   public var imageRepresentation: AppKit.NSBitmapImageRep {

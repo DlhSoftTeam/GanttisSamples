@@ -6,19 +6,19 @@
 	<dict>
 		<key>GanttChart.nib</key>
 		<data>
-		44nnZ4zh8nbkDPVOADfcLivO28A=
+		cI3VF/C5xkrs4kB5lPCyjs1FFZM=
 		</data>
 		<key>GanttChartContent.nib</key>
 		<data>
-		qrGtL8AR3bnJW+oUvor2Q8uiVNc=
+		WR66R/FaT0lrU0lMAdG0STaHU7o=
 		</data>
 		<key>GanttChartHeader.nib</key>
 		<data>
-		9B5M+3+IcilVbIhSqj5W179NP+8=
+		GI0tR4tk+9zI3+KL6oMmMRfq5kE=
 		</data>
 		<key>Headers/GanttisTouch-Swift.h</key>
 		<data>
-		8ko36aUCf+Xypx3a2NAOOgBtnxA=
+		ncsAjlMALthuq7pNZThE146DBvI=
 		</data>
 		<key>Headers/GanttisTouch.h</key>
 		<data>
@@ -26,31 +26,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ufa4qVkIrTiPgADLKZHGGNsYKww=
+		9ywE8RuiKNybVco8VMxFLIt/yuw=
 		</data>
 		<key>Modules/GanttisTouch.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		lJda2jkIgMI6zTi7v0bFPEUlzWo=
+		NDAAu2Q5WvpkJ9kmg3+LPzONJPU=
 		</data>
 		<key>Modules/GanttisTouch.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		2R28/j8gyKepAcXCQ7V05YjEGFo=
+		etHTyRY4EOT5rMMsNEwGkHzGgwM=
 		</data>
 		<key>Modules/GanttisTouch.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Zc9Pz+xWtsc6KBhPquzULvSt8A4=
+		bJRidiW+9VNIKMWFo969BOj+Tgg=
 		</data>
 		<key>Modules/GanttisTouch.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		lJda2jkIgMI6zTi7v0bFPEUlzWo=
+		NDAAu2Q5WvpkJ9kmg3+LPzONJPU=
 		</data>
 		<key>Modules/GanttisTouch.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		2R28/j8gyKepAcXCQ7V05YjEGFo=
+		etHTyRY4EOT5rMMsNEwGkHzGgwM=
 		</data>
 		<key>Modules/GanttisTouch.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		Zc9Pz+xWtsc6KBhPquzULvSt8A4=
+		bJRidiW+9VNIKMWFo969BOj+Tgg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,28 +63,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WDLoDwYVC2gTuW6Ica0K5Ni2SzzANt/uD1j+aS3BFJQ=
+			XFLtvrSt4M9qPCZAe3dvCGVBMN8DbmpuhhtZdat6fao=
 			</data>
 		</dict>
 		<key>GanttChartContent.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cvIOb9TFLX50dlrzOeMs6XnD25wkdTLRafMOD8Jebd4=
+			t8PQDJ7phV5eQtnaXLW0ADFAP3V/T6YZZjq+VJU2iZg=
 			</data>
 		</dict>
 		<key>GanttChartHeader.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9lvZJkSGn5qDuEGQk+gqNN2VgfajGsdOKjvwZ0D+8qw=
+			cH5O7lBtF0RGZRLln5JeA59bSRQatJI8LTBD91z3jsA=
 			</data>
 		</dict>
 		<key>Headers/GanttisTouch-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			A0tuoA4hgMaT5aq2gWPaAoUZoqhMYLXpJ+WMh20ljEs=
+			2CwaZK/IgakhHNfIOGaOHB8X6AZD24b8NDO+w770lAk=
 			</data>
 		</dict>
 		<key>Headers/GanttisTouch.h</key>
@@ -98,42 +98,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			txR1FbDOmaFe3DTFWkDrQl214kFoHkVuA3suva3rTws=
+			hj0cMwxK5Rd7oCi9D6yYDF/bw7N7O3vqP2+wCsgh9Lk=
 			</data>
 		</dict>
 		<key>Modules/GanttisTouch.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Wu55nej7ZZju3dPAkRQNqZZPeDfIdQSnYV3cRIswdic=
+			O+nwzw026ihnMDrn5FPkr9RdvqHpm2H+3XxXMpRjjw8=
 			</data>
 		</dict>
 		<key>Modules/GanttisTouch.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7y0aH0DgWHWEvjGdz9KlaXAYIUuvgXG6Hv4zGwjlNyQ=
+			cIdD9riC+KaWlFtn1yZP0lCoBCK5lbjdKs7phUJ7q8Q=
 			</data>
 		</dict>
 		<key>Modules/GanttisTouch.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			txR1FbDOmaFe3DTFWkDrQl214kFoHkVuA3suva3rTws=
+			hj0cMwxK5Rd7oCi9D6yYDF/bw7N7O3vqP2+wCsgh9Lk=
 			</data>
 		</dict>
 		<key>Modules/GanttisTouch.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Wu55nej7ZZju3dPAkRQNqZZPeDfIdQSnYV3cRIswdic=
+			O+nwzw026ihnMDrn5FPkr9RdvqHpm2H+3XxXMpRjjw8=
 			</data>
 		</dict>
 		<key>Modules/GanttisTouch.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7y0aH0DgWHWEvjGdz9KlaXAYIUuvgXG6Hv4zGwjlNyQ=
+			cIdD9riC+KaWlFtn1yZP0lCoBCK5lbjdKs7phUJ7q8Q=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

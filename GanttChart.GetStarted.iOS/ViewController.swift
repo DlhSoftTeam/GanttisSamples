@@ -27,7 +27,7 @@ class ViewController: UIViewController {
                 attachment: "Resource \(i % 3 + 1)")
             // Optionally, set up individual behavioral and appearance settings (style properties) for any item.
             if i == 3 {
-                item.label = "M"
+                item.label = ""
                 item.finish = item.start
                 item.type = .milestone
                 item.style.barFillColor = .orange
