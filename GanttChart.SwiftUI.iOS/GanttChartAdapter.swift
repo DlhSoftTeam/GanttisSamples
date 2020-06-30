@@ -56,6 +56,9 @@ class GanttChartAdapter: ObservableObject, GanttChartItemObserver {
             return nil
         }
         let contentController = GanttChartContentController(itemManager: itemSource)
+        let weekStart = Time.current.weekStart
+        contentController.scrollableTimeline =
+            TimeRange(from: weekStart, to: weekStart.adding(weeks: 5))
         contentController.intervalHighlighters = [
             TimeSelector(.weeks(startingOn: .monday)), TimeSelector(.time)]
         contentController.scheduleHighlighters = [ScheduleTimeSelector(.weekends)]
