@@ -6,15 +6,15 @@
 	<dict>
 		<key>GanttChart.nib</key>
 		<data>
-		BcngVw5IqgysaK25A8MCM97lu+M=
+		gCOQO3VwfiLzahrOK12K4sGSVu0=
 		</data>
 		<key>GanttChartContent.nib</key>
 		<data>
-		UhK4gd8pgHLRXBWk7BGS0SNrdzA=
+		Fllt1PEpyg2yYvrIzydSnDSoQtE=
 		</data>
 		<key>GanttChartHeader.nib</key>
 		<data>
-		pKSAEhgRtUhzNY26SlT1VlxYFYQ=
+		c+vQh5ptkG5ZxjbEoM08kL0TE18=
 		</data>
 		<key>Headers/GanttisTouch-Swift.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		dv4b35yFHhQfX/fIDalvZnHvDGs=
+		SAurYT5FRXkKsdWnRWeutNUV/zw=
 		</data>
 		<key>Modules/GanttisTouch.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -63,21 +63,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xqyVzbH89hvnKaYzyCTvd9fY8RPxqA2DBUsGycnYRSE=
+			boGZstOm2GjiX6MrPo3hvhZH/uafjM8R0t5J0ZpKtmI=
 			</data>
 		</dict>
 		<key>GanttChartContent.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mnEydC86Sux7/p7aG2Gx8RFvzJQ+pRKDmN1KiML3js0=
+			ZWcp0wzuiavOmJJ9pKsAGulY9FBhMY8ZooIl37kyrc4=
 			</data>
 		</dict>
 		<key>GanttChartHeader.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hyTLF+TJpoiMm53ZNSYLfzS1eBi4M7c5XrAclzPonAw=
+			sUV6EyG+FSL9Ho2vh+nQ9+RvseB2tsEH+F1wN856Cvw=
 			</data>
 		</dict>
 		<key>Headers/GanttisTouch-Swift.h</key>
