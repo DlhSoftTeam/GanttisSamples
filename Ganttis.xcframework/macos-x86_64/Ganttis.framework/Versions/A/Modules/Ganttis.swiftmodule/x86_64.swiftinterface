@@ -445,6 +445,16 @@ public var license: Swift.String?
   }
   public func filteredItems(range: Ganttis.RowRange, timeline: Ganttis.TimeRange) -> [Ganttis.GanttChartItem]
   public func filteredDependencies(range: Ganttis.RowRange, timeline: Ganttis.TimeRange) -> [Ganttis.GanttChartDependency]
+  public var availableItems: [Ganttis.GanttChartItem]? {
+    get
+  }
+  public var availableDependencies: [Ganttis.GanttChartDependency]? {
+    get
+  }
+  public var areOutOfRowRangeItemsAvailable: Swift.Bool {
+    get
+    set
+  }
   public func parent(of item: Ganttis.GanttChartItem) -> Ganttis.GanttChartItem?
   public func children(of item: Ganttis.GanttChartItem) -> [Ganttis.GanttChartItem]
   public var isPagingEnabled: Swift.Bool {
