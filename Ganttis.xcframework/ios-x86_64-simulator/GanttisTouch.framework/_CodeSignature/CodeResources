@@ -6,15 +6,15 @@
 	<dict>
 		<key>GanttChart.nib</key>
 		<data>
-		LafbZLFMKC+qW4EpMdqApeIteW8=
+		3Kd+MmcwQaNxVTUCNnKqKTPwIWU=
 		</data>
 		<key>GanttChartContent.nib</key>
 		<data>
-		WKlzcBkBoH5qoa7v9wY3ayTGVqc=
+		0G0Mfdya4lFTQtW57cWY1m5H5/M=
 		</data>
 		<key>GanttChartHeader.nib</key>
 		<data>
-		3yhkzb1qEuiTibwSrT3Xmrmldlw=
+		7a3Eq5mcxniAUsQwdRbtOo0BUOo=
 		</data>
 		<key>Headers/GanttisTouch-Swift.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		X/0LCccHU41Tn/K5i0QSx8ySFQY=
+		YUiEQPBN2rGRNj+fJ+WLO7yARms=
 		</data>
 		<key>Modules/GanttisTouch.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/GanttisTouch.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		bJRidiW+9VNIKMWFo969BOj+Tgg=
+		NW50L9EtrFCi3pPaLkWS5fo6Y+E=
 		</data>
 		<key>Modules/GanttisTouch.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/GanttisTouch.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		bJRidiW+9VNIKMWFo969BOj+Tgg=
+		NW50L9EtrFCi3pPaLkWS5fo6Y+E=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,21 +63,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qQBXiyVHeuelHmwFXWUYbTHmUrLJEZmH3FlX9dydeQk=
+			/1MDxAm8r81/QGc2cuu9NlfYf6Xc+t4adCe7iay29L0=
 			</data>
 		</dict>
 		<key>GanttChartContent.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gDtEWDoyXZlCOEpDFTe6lXGWen8i8UArhq20FHooxjo=
+			OEU8fEv1FNp3USv+Ddo+/T7yYe8AHlbGROS971cLOGg=
 			</data>
 		</dict>
 		<key>GanttChartHeader.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			npIy4sywzLUEV69nAEI63fjMyhyBy/VxxjcdXc72uvI=
+			gDoQLGtZY89rbyZjgYLyMXX1XEhzXUR0kWcQYWlREDs=
 			</data>
 		</dict>
 		<key>Headers/GanttisTouch-Swift.h</key>
@@ -112,7 +112,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cIdD9riC+KaWlFtn1yZP0lCoBCK5lbjdKs7phUJ7q8Q=
+			HdBfBoif1W7Eip2pNltC0Ard9yfjZsMwr5o/h/49IXI=
 			</data>
 		</dict>
 		<key>Modules/GanttisTouch.swiftmodule/x86_64.swiftdoc</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cIdD9riC+KaWlFtn1yZP0lCoBCK5lbjdKs7phUJ7q8Q=
+			HdBfBoif1W7Eip2pNltC0Ard9yfjZsMwr5o/h/49IXI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
