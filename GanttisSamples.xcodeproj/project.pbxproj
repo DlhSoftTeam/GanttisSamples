@@ -16,24 +16,6 @@
 		BF4920F9235AEEDA008F9A5F /* Licensing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4920F8235AEEDA008F9A5F /* Licensing.swift */; };
 		BF59EF67236D6BF9001618EC /* GanttChartAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59EF66236D6BF9001618EC /* GanttChartAdapter.swift */; };
 		BF59EF69236D6C41001618EC /* GanttChartAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59EF68236D6C41001618EC /* GanttChartAdapter.swift */; };
-		BF5DB73824CABA49003C3265 /* Ganttis.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5DB72E24CABA41003C3265 /* Ganttis.xcframework */; };
-		BF5DB73924CABA49003C3265 /* Ganttis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF5DB72E24CABA41003C3265 /* Ganttis.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		BF5DB73A24CABA4C003C3265 /* Ganttis.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5DB72E24CABA41003C3265 /* Ganttis.xcframework */; };
-		BF5DB73B24CABA4C003C3265 /* Ganttis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF5DB72E24CABA41003C3265 /* Ganttis.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		BF5DB73C24CABA50003C3265 /* Ganttis.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5DB72E24CABA41003C3265 /* Ganttis.xcframework */; };
-		BF5DB73D24CABA50003C3265 /* Ganttis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF5DB72E24CABA41003C3265 /* Ganttis.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		BF5DB73E24CABA54003C3265 /* Ganttis.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5DB72E24CABA41003C3265 /* Ganttis.xcframework */; };
-		BF5DB73F24CABA54003C3265 /* Ganttis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF5DB72E24CABA41003C3265 /* Ganttis.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		BF5DB74024CABA58003C3265 /* Ganttis.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5DB72E24CABA41003C3265 /* Ganttis.xcframework */; };
-		BF5DB74124CABA58003C3265 /* Ganttis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF5DB72E24CABA41003C3265 /* Ganttis.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		BF5DB74224CABA5C003C3265 /* Ganttis.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5DB72E24CABA41003C3265 /* Ganttis.xcframework */; };
-		BF5DB74324CABA5C003C3265 /* Ganttis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF5DB72E24CABA41003C3265 /* Ganttis.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		BF5DB74424CABA60003C3265 /* Ganttis.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5DB72E24CABA41003C3265 /* Ganttis.xcframework */; };
-		BF5DB74524CABA60003C3265 /* Ganttis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF5DB72E24CABA41003C3265 /* Ganttis.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		BF5DB74624CABA64003C3265 /* Ganttis.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5DB72E24CABA41003C3265 /* Ganttis.xcframework */; };
-		BF5DB74724CABA64003C3265 /* Ganttis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF5DB72E24CABA41003C3265 /* Ganttis.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		BF5DB74824CABA69003C3265 /* Ganttis.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5DB72E24CABA41003C3265 /* Ganttis.xcframework */; };
-		BF5DB74924CABA69003C3265 /* Ganttis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF5DB72E24CABA41003C3265 /* Ganttis.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		BF890ED3235E132D00D3FCF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF890ED2235E132D00D3FCF0 /* AppDelegate.m */; };
 		BF890EDC235E132D00D3FCF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF890EDA235E132D00D3FCF0 /* Main.storyboard */; };
 		BF890EDE235E132E00D3FCF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF890EDD235E132E00D3FCF0 /* Assets.xcassets */; };
@@ -42,6 +24,15 @@
 		BF890EEB235E136200D3FCF0 /* Licensing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF890EEA235E136200D3FCF0 /* Licensing.swift */; };
 		BF890EF2235E13C800D3FCF0 /* GanttChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF890EF0235E13C800D3FCF0 /* GanttChartViewController.swift */; };
 		BF890EF3235E13C800D3FCF0 /* GanttChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF890EF1235E13C800D3FCF0 /* GanttChartViewController.xib */; };
+		BFA11D5D2542054F00A1EB6A /* Ganttis in Frameworks */ = {isa = PBXBuildFile; productRef = BFA11D5C2542054F00A1EB6A /* Ganttis */; };
+		BFA11D602542056100A1EB6A /* Ganttis in Frameworks */ = {isa = PBXBuildFile; productRef = BFA11D5F2542056100A1EB6A /* Ganttis */; };
+		BFA11D622542056A00A1EB6A /* Ganttis in Frameworks */ = {isa = PBXBuildFile; productRef = BFA11D612542056A00A1EB6A /* Ganttis */; };
+		BFA11D652542057B00A1EB6A /* Ganttis in Frameworks */ = {isa = PBXBuildFile; productRef = BFA11D642542057B00A1EB6A /* Ganttis */; };
+		BFA11D672542058300A1EB6A /* Ganttis in Frameworks */ = {isa = PBXBuildFile; productRef = BFA11D662542058300A1EB6A /* Ganttis */; };
+		BFA11D69254205A600A1EB6A /* Ganttis in Frameworks */ = {isa = PBXBuildFile; productRef = BFA11D68254205A600A1EB6A /* Ganttis */; };
+		BFA11D6B254205AE00A1EB6A /* Ganttis in Frameworks */ = {isa = PBXBuildFile; productRef = BFA11D6A254205AE00A1EB6A /* Ganttis */; };
+		BFA11D6D254205B300A1EB6A /* Ganttis in Frameworks */ = {isa = PBXBuildFile; productRef = BFA11D6C254205B300A1EB6A /* Ganttis */; };
+		BFA11D6F254205BB00A1EB6A /* Ganttis in Frameworks */ = {isa = PBXBuildFile; productRef = BFA11D6E254205BB00A1EB6A /* Ganttis */; };
 		BFD9A3342362F99900223290 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD9A3332362F99900223290 /* AppDelegate.swift */; };
 		BFD9A3362362F99900223290 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD9A3352362F99900223290 /* SceneDelegate.swift */; };
 		BFD9A3382362F99900223290 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD9A3372362F99900223290 /* ContentView.swift */; };
@@ -87,7 +78,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BF5DB73D24CABA50003C3265 /* Ganttis.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,7 +88,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BF5DB74724CABA64003C3265 /* Ganttis.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,7 +98,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BF5DB74324CABA5C003C3265 /* Ganttis.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,7 +108,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BF5DB73924CABA49003C3265 /* Ganttis.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -131,7 +118,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BF5DB74924CABA69003C3265 /* Ganttis.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,7 +128,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BF5DB73F24CABA54003C3265 /* Ganttis.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,7 +138,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BF5DB74524CABA60003C3265 /* Ganttis.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,7 +148,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BF5DB74124CABA58003C3265 /* Ganttis.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,7 +158,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BF5DB73B24CABA4C003C3265 /* Ganttis.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,7 +178,6 @@
 		BF4920F8235AEEDA008F9A5F /* Licensing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Licensing.swift; sourceTree = "<group>"; };
 		BF59EF66236D6BF9001618EC /* GanttChartAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GanttChartAdapter.swift; sourceTree = "<group>"; };
 		BF59EF68236D6C41001618EC /* GanttChartAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GanttChartAdapter.swift; sourceTree = "<group>"; };
-		BF5DB72E24CABA41003C3265 /* Ganttis.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Ganttis.xcframework; sourceTree = "<group>"; };
 		BF703E4523537FAE00BCC1E4 /* GanttChart.GetStarted.iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GanttChart.GetStarted.iOS.entitlements; sourceTree = "<group>"; };
 		BF890ECF235E132D00D3FCF0 /* GanttChart.ObjC.iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GanttChart.ObjC.iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF890ED1235E132D00D3FCF0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -273,7 +254,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF5DB73C24CABA50003C3265 /* Ganttis.xcframework in Frameworks */,
+				BFA11D652542057B00A1EB6A /* Ganttis in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +262,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF5DB74624CABA64003C3265 /* Ganttis.xcframework in Frameworks */,
+				BFA11D672542058300A1EB6A /* Ganttis in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +270,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF5DB74224CABA5C003C3265 /* Ganttis.xcframework in Frameworks */,
+				BFA11D6F254205BB00A1EB6A /* Ganttis in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +278,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF5DB73824CABA49003C3265 /* Ganttis.xcframework in Frameworks */,
+				BFA11D5D2542054F00A1EB6A /* Ganttis in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +286,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF5DB74824CABA69003C3265 /* Ganttis.xcframework in Frameworks */,
+				BFA11D602542056100A1EB6A /* Ganttis in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +294,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF5DB73E24CABA54003C3265 /* Ganttis.xcframework in Frameworks */,
+				BFA11D69254205A600A1EB6A /* Ganttis in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +302,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF5DB74424CABA60003C3265 /* Ganttis.xcframework in Frameworks */,
+				BFA11D6B254205AE00A1EB6A /* Ganttis in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +310,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF5DB74024CABA58003C3265 /* Ganttis.xcframework in Frameworks */,
+				BFA11D6D254205B300A1EB6A /* Ganttis in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +318,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF5DB73A24CABA4C003C3265 /* Ganttis.xcframework in Frameworks */,
+				BFA11D622542056A00A1EB6A /* Ganttis in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +394,13 @@
 			name = Integration;
 			sourceTree = "<group>";
 		};
+		BFA11D632542057B00A1EB6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BFD9A3322362F99900223290 /* GanttChart.SwiftUI.iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -450,7 +438,7 @@
 				BFF1EA7A2362E42800624DBE /* GanttChart.SwiftUI.macOS */,
 				BFD9A3322362F99900223290 /* GanttChart.SwiftUI.iOS */,
 				BFEACF6222F18E9100C933A3 /* Products */,
-				BFF1EA8C2362E47200624DBE /* Frameworks */,
+				BFA11D632542057B00A1EB6A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -547,14 +535,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		BFF1EA8C2362E47200624DBE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BF5DB72E24CABA41003C3265 /* Ganttis.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		BFFD1CB4234CECA10033D337 /* OutlineGanttChart.GetStarted.macOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -586,6 +566,9 @@
 			dependencies = (
 			);
 			name = GanttChart.ObjC.macOS;
+			packageProductDependencies = (
+				BFA11D642542057B00A1EB6A /* Ganttis */,
+			);
 			productName = GanttChart.ObjC.macOS;
 			productReference = BF4920CB235AEB39008F9A5F /* GanttChart.ObjC.macOS.app */;
 			productType = "com.apple.product-type.application";
@@ -604,6 +587,9 @@
 			dependencies = (
 			);
 			name = GanttChart.ObjC.iOS;
+			packageProductDependencies = (
+				BFA11D662542058300A1EB6A /* Ganttis */,
+			);
 			productName = GanttChart.ObjC.iOS;
 			productReference = BF890ECF235E132D00D3FCF0 /* GanttChart.ObjC.iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -622,6 +608,9 @@
 			dependencies = (
 			);
 			name = GanttChart.SwiftUI.iOS;
+			packageProductDependencies = (
+				BFA11D6E254205BB00A1EB6A /* Ganttis */,
+			);
 			productName = GanttChart.SwiftUI.iOS;
 			productReference = BFD9A3312362F99900223290 /* GanttChart.SwiftUI.iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -640,6 +629,9 @@
 			dependencies = (
 			);
 			name = GanttChart.GetStarted.macOS;
+			packageProductDependencies = (
+				BFA11D5C2542054F00A1EB6A /* Ganttis */,
+			);
 			productName = GanttChart.GetStarted.macOS;
 			productReference = BFEACF6122F18E9100C933A3 /* GanttChart.GetStarted.macOS.app */;
 			productType = "com.apple.product-type.application";
@@ -658,6 +650,9 @@
 			dependencies = (
 			);
 			name = GanttChart.GetStarted.iOS;
+			packageProductDependencies = (
+				BFA11D5F2542056100A1EB6A /* Ganttis */,
+			);
 			productName = GanttChart.GetStarted.iOS;
 			productReference = BFEACF7622F18EA800C933A3 /* GanttChart.GetStarted.iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -676,6 +671,9 @@
 			dependencies = (
 			);
 			name = GanttChart.Virtualization.macOS;
+			packageProductDependencies = (
+				BFA11D68254205A600A1EB6A /* Ganttis */,
+			);
 			productName = GanttChart.Virtualization.macOS;
 			productReference = BFF1EA462362D05600624DBE /* GanttChart.Virtualization.macOS.app */;
 			productType = "com.apple.product-type.application";
@@ -694,6 +692,9 @@
 			dependencies = (
 			);
 			name = GanttChart.Virtualization.iOS;
+			packageProductDependencies = (
+				BFA11D6A254205AE00A1EB6A /* Ganttis */,
+			);
 			productName = GanttChart.Virtualization.iOS;
 			productReference = BFF1EA5D2362DCCB00624DBE /* GanttChart.Virtualization.iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -712,6 +713,9 @@
 			dependencies = (
 			);
 			name = GanttChart.SwiftUI.macOS;
+			packageProductDependencies = (
+				BFA11D6C254205B300A1EB6A /* Ganttis */,
+			);
 			productName = GanttChart.SwiftUI.macOS;
 			productReference = BFF1EA792362E42800624DBE /* GanttChart.SwiftUI.macOS.app */;
 			productType = "com.apple.product-type.application";
@@ -730,6 +734,9 @@
 			dependencies = (
 			);
 			name = OutlineGanttChart.GetStarted.macOS;
+			packageProductDependencies = (
+				BFA11D612542056A00A1EB6A /* Ganttis */,
+			);
 			productName = OutlineGanttChart.GetStarted.macOS;
 			productReference = BFFD1CB3234CECA00033D337 /* OutlineGanttChart.GetStarted.macOS.app */;
 			productType = "com.apple.product-type.application";
@@ -741,7 +748,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1110;
-				LastUpgradeCheck = 1120;
+				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					BF4920CA235AEB39008F9A5F = {
 						CreatedOnToolsVersion = 11.1;
@@ -783,6 +790,9 @@
 				Base,
 			);
 			mainGroup = BFEACF5622F18E3800C933A3;
+			packageReferences = (
+				BFA11D5B2542054F00A1EB6A /* XCRemoteSwiftPackageReference "Ganttis" */,
+			);
 			productRefGroup = BFEACF6222F18E9100C933A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1539,6 +1549,7 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1572,6 +1583,7 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -2573,6 +2585,65 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BFA11D5B2542054F00A1EB6A /* XCRemoteSwiftPackageReference "Ganttis" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DlhSoftTeam/Ganttis.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BFA11D5C2542054F00A1EB6A /* Ganttis */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFA11D5B2542054F00A1EB6A /* XCRemoteSwiftPackageReference "Ganttis" */;
+			productName = Ganttis;
+		};
+		BFA11D5F2542056100A1EB6A /* Ganttis */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFA11D5B2542054F00A1EB6A /* XCRemoteSwiftPackageReference "Ganttis" */;
+			productName = Ganttis;
+		};
+		BFA11D612542056A00A1EB6A /* Ganttis */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFA11D5B2542054F00A1EB6A /* XCRemoteSwiftPackageReference "Ganttis" */;
+			productName = Ganttis;
+		};
+		BFA11D642542057B00A1EB6A /* Ganttis */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFA11D5B2542054F00A1EB6A /* XCRemoteSwiftPackageReference "Ganttis" */;
+			productName = Ganttis;
+		};
+		BFA11D662542058300A1EB6A /* Ganttis */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFA11D5B2542054F00A1EB6A /* XCRemoteSwiftPackageReference "Ganttis" */;
+			productName = Ganttis;
+		};
+		BFA11D68254205A600A1EB6A /* Ganttis */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFA11D5B2542054F00A1EB6A /* XCRemoteSwiftPackageReference "Ganttis" */;
+			productName = Ganttis;
+		};
+		BFA11D6A254205AE00A1EB6A /* Ganttis */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFA11D5B2542054F00A1EB6A /* XCRemoteSwiftPackageReference "Ganttis" */;
+			productName = Ganttis;
+		};
+		BFA11D6C254205B300A1EB6A /* Ganttis */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFA11D5B2542054F00A1EB6A /* XCRemoteSwiftPackageReference "Ganttis" */;
+			productName = Ganttis;
+		};
+		BFA11D6E254205BB00A1EB6A /* Ganttis */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFA11D5B2542054F00A1EB6A /* XCRemoteSwiftPackageReference "Ganttis" */;
+			productName = Ganttis;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BFEACF5722F18E3800C933A3 /* Project object */;
 }
