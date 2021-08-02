@@ -141,6 +141,8 @@ class ViewController: NSViewController, OutlineGanttChartDataSource {
             TimeSelector(.weeks), TimeSelector(.time)]
         ganttChartContentController.scheduleHighlighters = [ScheduleTimeSelector(.weekends)]
         ganttChartContentController.timeScale = .intervalsWith(period: 15, in: .minutes)
+        ganttChartContentController.style.regionalBackgroundColorForType[.summary] =
+            Color(red: 0.65, green: 0.65, blue: 0.65, alpha: 0.35)
         // Gantt chart headers
         ganttChartHeaderController.rows = [
             GanttChartHeaderRow(.months), GanttChartHeaderRow(.weeks),
