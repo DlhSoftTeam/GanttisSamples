@@ -9,6 +9,10 @@ import SwiftUI
 
 @main
 struct GanttChart_SwiftUI_MultiplatformApp: App {
+    init() {
+        set(license: "...")
+    }
+    
     @StateObject private var adapter: GanttChartAdapter = {
         var items = [
             Item(label: "A", row: 0, start: 1, finish: 2),

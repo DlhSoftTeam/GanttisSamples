@@ -45,6 +45,8 @@
 		BFA11D6B254205AE00A1EB6A /* Ganttis in Frameworks */ = {isa = PBXBuildFile; productRef = BFA11D6A254205AE00A1EB6A /* Ganttis */; };
 		BFA11D6D254205B300A1EB6A /* Ganttis in Frameworks */ = {isa = PBXBuildFile; productRef = BFA11D6C254205B300A1EB6A /* Ganttis */; };
 		BFA11D6F254205BB00A1EB6A /* Ganttis in Frameworks */ = {isa = PBXBuildFile; productRef = BFA11D6E254205BB00A1EB6A /* Ganttis */; };
+		BFD1076626B8106C00988250 /* Licensing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1076526B8106C00988250 /* Licensing.swift */; };
+		BFD1076826B8108300988250 /* Licensing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1076726B8108300988250 /* Licensing.swift */; };
 		BFD9A3342362F99900223290 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD9A3332362F99900223290 /* AppDelegate.swift */; };
 		BFD9A3362362F99900223290 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD9A3352362F99900223290 /* SceneDelegate.swift */; };
 		BFD9A3382362F99900223290 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD9A3372362F99900223290 /* ContentView.swift */; };
@@ -216,6 +218,8 @@
 		BF89BA8B26B7F8E500EAB46B /* GanttChartAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GanttChartAdapter.swift; sourceTree = "<group>"; };
 		BF89BA8E26B7F8EF00EAB46B /* GanttChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GanttChart.swift; sourceTree = "<group>"; };
 		BF89BA8F26B7F8EF00EAB46B /* GanttChartAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GanttChartAdapter.swift; sourceTree = "<group>"; };
+		BFD1076526B8106C00988250 /* Licensing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Licensing.swift; sourceTree = "<group>"; };
+		BFD1076726B8108300988250 /* Licensing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Licensing.swift; sourceTree = "<group>"; };
 		BFD9A3312362F99900223290 /* GanttChart.SwiftUI.iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GanttChart.SwiftUI.iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD9A3332362F99900223290 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFD9A3352362F99900223290 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -484,6 +488,7 @@
 		BF89BA8826B7F8CA00EAB46B /* Integration */ = {
 			isa = PBXGroup;
 			children = (
+				BFD1076526B8106C00988250 /* Licensing.swift */,
 				BF89BA8E26B7F8EF00EAB46B /* GanttChart.swift */,
 				BF89BA8F26B7F8EF00EAB46B /* GanttChartAdapter.swift */,
 			);
@@ -493,6 +498,7 @@
 		BF89BA8926B7F8D200EAB46B /* Integration */ = {
 			isa = PBXGroup;
 			children = (
+				BFD1076726B8108300988250 /* Licensing.swift */,
 				BF89BA8A26B7F8E400EAB46B /* GanttChart.swift */,
 				BF89BA8B26B7F8E500EAB46B /* GanttChartAdapter.swift */,
 			);
@@ -1096,6 +1102,7 @@
 			files = (
 				BF89BA7326B7F7B700EAB46B /* ContentView.swift in Sources */,
 				BF89BA8626B7F8BE00EAB46B /* Items.swift in Sources */,
+				BFD1076626B8106C00988250 /* Licensing.swift in Sources */,
 				BF89BA7126B7F7B700EAB46B /* GanttChart_SwiftUI_MultiplatformApp.swift in Sources */,
 				BF89BA9126B7F8EF00EAB46B /* GanttChartAdapter.swift in Sources */,
 				BF89BA9026B7F8EF00EAB46B /* GanttChart.swift in Sources */,
@@ -1108,6 +1115,7 @@
 			files = (
 				BF89BA7426B7F7B700EAB46B /* ContentView.swift in Sources */,
 				BF89BA8726B7F8BE00EAB46B /* Items.swift in Sources */,
+				BFD1076826B8108300988250 /* Licensing.swift in Sources */,
 				BF89BA7226B7F7B700EAB46B /* GanttChart_SwiftUI_MultiplatformApp.swift in Sources */,
 				BF89BA8D26B7F8E500EAB46B /* GanttChartAdapter.swift in Sources */,
 				BF89BA8C26B7F8E500EAB46B /* GanttChart.swift in Sources */,
