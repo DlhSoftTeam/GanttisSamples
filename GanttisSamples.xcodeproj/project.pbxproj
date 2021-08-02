@@ -24,6 +24,18 @@
 		BF890EEB235E136200D3FCF0 /* Licensing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF890EEA235E136200D3FCF0 /* Licensing.swift */; };
 		BF890EF2235E13C800D3FCF0 /* GanttChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF890EF0235E13C800D3FCF0 /* GanttChartViewController.swift */; };
 		BF890EF3235E13C800D3FCF0 /* GanttChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF890EF1235E13C800D3FCF0 /* GanttChartViewController.xib */; };
+		BF89BA7126B7F7B700EAB46B /* GanttChart_SwiftUI_MultiplatformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF89BA5F26B7F7B700EAB46B /* GanttChart_SwiftUI_MultiplatformApp.swift */; };
+		BF89BA7226B7F7B700EAB46B /* GanttChart_SwiftUI_MultiplatformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF89BA5F26B7F7B700EAB46B /* GanttChart_SwiftUI_MultiplatformApp.swift */; };
+		BF89BA7326B7F7B700EAB46B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF89BA6026B7F7B700EAB46B /* ContentView.swift */; };
+		BF89BA7426B7F7B700EAB46B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF89BA6026B7F7B700EAB46B /* ContentView.swift */; };
+		BF89BA7526B7F7B700EAB46B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF89BA6126B7F7B700EAB46B /* Assets.xcassets */; };
+		BF89BA7626B7F7B700EAB46B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF89BA6126B7F7B700EAB46B /* Assets.xcassets */; };
+		BF89BA8626B7F8BE00EAB46B /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF89BA8526B7F8BE00EAB46B /* Items.swift */; };
+		BF89BA8726B7F8BE00EAB46B /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF89BA8526B7F8BE00EAB46B /* Items.swift */; };
+		BF89BA8C26B7F8E500EAB46B /* GanttChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF89BA8A26B7F8E400EAB46B /* GanttChart.swift */; };
+		BF89BA8D26B7F8E500EAB46B /* GanttChartAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF89BA8B26B7F8E500EAB46B /* GanttChartAdapter.swift */; };
+		BF89BA9026B7F8EF00EAB46B /* GanttChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF89BA8E26B7F8EF00EAB46B /* GanttChart.swift */; };
+		BF89BA9126B7F8EF00EAB46B /* GanttChartAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF89BA8F26B7F8EF00EAB46B /* GanttChartAdapter.swift */; };
 		BFA11D5D2542054F00A1EB6A /* Ganttis in Frameworks */ = {isa = PBXBuildFile; productRef = BFA11D5C2542054F00A1EB6A /* Ganttis */; };
 		BFA11D602542056100A1EB6A /* Ganttis in Frameworks */ = {isa = PBXBuildFile; productRef = BFA11D5F2542056100A1EB6A /* Ganttis */; };
 		BFA11D622542056A00A1EB6A /* Ganttis in Frameworks */ = {isa = PBXBuildFile; productRef = BFA11D612542056A00A1EB6A /* Ganttis */; };
@@ -191,6 +203,19 @@
 		BF890EEA235E136200D3FCF0 /* Licensing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Licensing.swift; sourceTree = "<group>"; };
 		BF890EF0235E13C800D3FCF0 /* GanttChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GanttChartViewController.swift; sourceTree = "<group>"; };
 		BF890EF1235E13C800D3FCF0 /* GanttChartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GanttChartViewController.xib; sourceTree = "<group>"; };
+		BF89BA5F26B7F7B700EAB46B /* GanttChart_SwiftUI_MultiplatformApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GanttChart_SwiftUI_MultiplatformApp.swift; sourceTree = "<group>"; };
+		BF89BA6026B7F7B700EAB46B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BF89BA6126B7F7B700EAB46B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF89BA6626B7F7B700EAB46B /* GanttChart.SwiftUI.Multiplatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GanttChart.SwiftUI.Multiplatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF89BA6826B7F7B700EAB46B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF89BA6D26B7F7B700EAB46B /* GanttChart.SwiftUI.Multiplatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GanttChart.SwiftUI.Multiplatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF89BA6F26B7F7B700EAB46B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF89BA7026B7F7B700EAB46B /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		BF89BA8526B7F8BE00EAB46B /* Items.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		BF89BA8A26B7F8E400EAB46B /* GanttChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GanttChart.swift; sourceTree = "<group>"; };
+		BF89BA8B26B7F8E500EAB46B /* GanttChartAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GanttChartAdapter.swift; sourceTree = "<group>"; };
+		BF89BA8E26B7F8EF00EAB46B /* GanttChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GanttChart.swift; sourceTree = "<group>"; };
+		BF89BA8F26B7F8EF00EAB46B /* GanttChartAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GanttChartAdapter.swift; sourceTree = "<group>"; };
 		BFD9A3312362F99900223290 /* GanttChart.SwiftUI.iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GanttChart.SwiftUI.iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD9A3332362F99900223290 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFD9A3352362F99900223290 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -263,6 +288,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFA11D672542058300A1EB6A /* Ganttis in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF89BA6326B7F7B700EAB46B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF89BA6A26B7F7B700EAB46B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +433,72 @@
 			name = Integration;
 			sourceTree = "<group>";
 		};
+		BF89BA5E26B7F7B700EAB46B /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BF89BA5F26B7F7B700EAB46B /* GanttChart_SwiftUI_MultiplatformApp.swift */,
+				BF89BA6026B7F7B700EAB46B /* ContentView.swift */,
+				BF89BA6126B7F7B700EAB46B /* Assets.xcassets */,
+				BF89BA8426B7F8AC00EAB46B /* Integration */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		BF89BA6726B7F7B700EAB46B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BF89BA6826B7F7B700EAB46B /* Info.plist */,
+				BF89BA8826B7F8CA00EAB46B /* Integration */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		BF89BA6E26B7F7B700EAB46B /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				BF89BA6F26B7F7B700EAB46B /* Info.plist */,
+				BF89BA7026B7F7B700EAB46B /* macOS.entitlements */,
+				BF89BA8926B7F8D200EAB46B /* Integration */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		BF89BA7D26B7F7BD00EAB46B /* GanttChart.SwiftUI.Multiplatform */ = {
+			isa = PBXGroup;
+			children = (
+				BF89BA5E26B7F7B700EAB46B /* Shared */,
+				BF89BA6726B7F7B700EAB46B /* iOS */,
+				BF89BA6E26B7F7B700EAB46B /* macOS */,
+			);
+			path = GanttChart.SwiftUI.Multiplatform;
+			sourceTree = "<group>";
+		};
+		BF89BA8426B7F8AC00EAB46B /* Integration */ = {
+			isa = PBXGroup;
+			children = (
+				BF89BA8526B7F8BE00EAB46B /* Items.swift */,
+			);
+			path = Integration;
+			sourceTree = "<group>";
+		};
+		BF89BA8826B7F8CA00EAB46B /* Integration */ = {
+			isa = PBXGroup;
+			children = (
+				BF89BA8E26B7F8EF00EAB46B /* GanttChart.swift */,
+				BF89BA8F26B7F8EF00EAB46B /* GanttChartAdapter.swift */,
+			);
+			path = Integration;
+			sourceTree = "<group>";
+		};
+		BF89BA8926B7F8D200EAB46B /* Integration */ = {
+			isa = PBXGroup;
+			children = (
+				BF89BA8A26B7F8E400EAB46B /* GanttChart.swift */,
+				BF89BA8B26B7F8E500EAB46B /* GanttChartAdapter.swift */,
+			);
+			path = Integration;
+			sourceTree = "<group>";
+		};
 		BFA11D632542057B00A1EB6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -437,6 +542,7 @@
 				BFF1EA5E2362DCCB00624DBE /* GanttChart.Virtualization.iOS */,
 				BFF1EA7A2362E42800624DBE /* GanttChart.SwiftUI.macOS */,
 				BFD9A3322362F99900223290 /* GanttChart.SwiftUI.iOS */,
+				BF89BA7D26B7F7BD00EAB46B /* GanttChart.SwiftUI.Multiplatform */,
 				BFEACF6222F18E9100C933A3 /* Products */,
 				BFA11D632542057B00A1EB6A /* Frameworks */,
 			);
@@ -454,6 +560,8 @@
 				BFF1EA5D2362DCCB00624DBE /* GanttChart.Virtualization.iOS.app */,
 				BFF1EA792362E42800624DBE /* GanttChart.SwiftUI.macOS.app */,
 				BFD9A3312362F99900223290 /* GanttChart.SwiftUI.iOS.app */,
+				BF89BA6626B7F7B700EAB46B /* GanttChart.SwiftUI.Multiplatform.app */,
+				BF89BA6D26B7F7B700EAB46B /* GanttChart.SwiftUI.Multiplatform.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -592,6 +700,40 @@
 			);
 			productName = GanttChart.ObjC.iOS;
 			productReference = BF890ECF235E132D00D3FCF0 /* GanttChart.ObjC.iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF89BA6526B7F7B700EAB46B /* GanttChart.SwiftUI.Multiplatform (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF89BA7B26B7F7B700EAB46B /* Build configuration list for PBXNativeTarget "GanttChart.SwiftUI.Multiplatform (iOS)" */;
+			buildPhases = (
+				BF89BA6226B7F7B700EAB46B /* Sources */,
+				BF89BA6326B7F7B700EAB46B /* Frameworks */,
+				BF89BA6426B7F7B700EAB46B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GanttChart.SwiftUI.Multiplatform (iOS)";
+			productName = "GanttChart.SwiftUI.Multiplatform (iOS)";
+			productReference = BF89BA6626B7F7B700EAB46B /* GanttChart.SwiftUI.Multiplatform.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF89BA6C26B7F7B700EAB46B /* GanttChart.SwiftUI.Multiplatform (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF89BA7C26B7F7B700EAB46B /* Build configuration list for PBXNativeTarget "GanttChart.SwiftUI.Multiplatform (macOS)" */;
+			buildPhases = (
+				BF89BA6926B7F7B700EAB46B /* Sources */,
+				BF89BA6A26B7F7B700EAB46B /* Frameworks */,
+				BF89BA6B26B7F7B700EAB46B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GanttChart.SwiftUI.Multiplatform (macOS)";
+			productName = "GanttChart.SwiftUI.Multiplatform (macOS)";
+			productReference = BF89BA6D26B7F7B700EAB46B /* GanttChart.SwiftUI.Multiplatform.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BFD9A3302362F99900223290 /* GanttChart.SwiftUI.iOS */ = {
@@ -747,7 +889,7 @@
 		BFEACF5722F18E3800C933A3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1110;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					BF4920CA235AEB39008F9A5F = {
@@ -757,6 +899,12 @@
 					BF890ECE235E132D00D3FCF0 = {
 						CreatedOnToolsVersion = 11.1;
 						LastSwiftMigration = 1110;
+					};
+					BF89BA6526B7F7B700EAB46B = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					BF89BA6C26B7F7B700EAB46B = {
+						CreatedOnToolsVersion = 12.5.1;
 					};
 					BFD9A3302362F99900223290 = {
 						CreatedOnToolsVersion = 11.1;
@@ -806,6 +954,8 @@
 				BFF1EA5C2362DCCB00624DBE /* GanttChart.Virtualization.iOS */,
 				BFF1EA782362E42800624DBE /* GanttChart.SwiftUI.macOS */,
 				BFD9A3302362F99900223290 /* GanttChart.SwiftUI.iOS */,
+				BF89BA6526B7F7B700EAB46B /* GanttChart.SwiftUI.Multiplatform (iOS) */,
+				BF89BA6C26B7F7B700EAB46B /* GanttChart.SwiftUI.Multiplatform (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -829,6 +979,22 @@
 				BF890EE1235E132E00D3FCF0 /* LaunchScreen.storyboard in Resources */,
 				BF890EDE235E132E00D3FCF0 /* Assets.xcassets in Resources */,
 				BF890EDC235E132D00D3FCF0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF89BA6426B7F7B700EAB46B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF89BA7526B7F7B700EAB46B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF89BA6B26B7F7B700EAB46B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF89BA7626B7F7B700EAB46B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -921,6 +1087,30 @@
 				BF890ED3235E132D00D3FCF0 /* AppDelegate.m in Sources */,
 				BF890EE4235E132E00D3FCF0 /* main.m in Sources */,
 				BF890EEB235E136200D3FCF0 /* Licensing.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF89BA6226B7F7B700EAB46B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF89BA7326B7F7B700EAB46B /* ContentView.swift in Sources */,
+				BF89BA8626B7F8BE00EAB46B /* Items.swift in Sources */,
+				BF89BA7126B7F7B700EAB46B /* GanttChart_SwiftUI_MultiplatformApp.swift in Sources */,
+				BF89BA9126B7F8EF00EAB46B /* GanttChartAdapter.swift in Sources */,
+				BF89BA9026B7F8EF00EAB46B /* GanttChart.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF89BA6926B7F7B700EAB46B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF89BA7426B7F7B700EAB46B /* ContentView.swift in Sources */,
+				BF89BA8726B7F8BE00EAB46B /* Items.swift in Sources */,
+				BF89BA7226B7F7B700EAB46B /* GanttChart_SwiftUI_MultiplatformApp.swift in Sources */,
+				BF89BA8D26B7F8E500EAB46B /* GanttChartAdapter.swift in Sources */,
+				BF89BA8C26B7F8E500EAB46B /* GanttChart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1383,6 +1573,195 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF89BA7726B7F7B700EAB46B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = V6L9SVN7M4;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = GanttChart.SwiftUI.Multiplatform/iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DlhSoft.GanttChart-SwiftUI-Multiplatform";
+				PRODUCT_NAME = GanttChart.SwiftUI.Multiplatform;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF89BA7826B7F7B700EAB46B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = V6L9SVN7M4;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = GanttChart.SwiftUI.Multiplatform/iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DlhSoft.GanttChart-SwiftUI-Multiplatform";
+				PRODUCT_NAME = GanttChart.SwiftUI.Multiplatform;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF89BA7926B7F7B700EAB46B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = GanttChart.SwiftUI.Multiplatform/macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = V6L9SVN7M4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = GanttChart.SwiftUI.Multiplatform/macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DlhSoft.GanttChart-SwiftUI-Multiplatform";
+				PRODUCT_NAME = GanttChart.SwiftUI.Multiplatform;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BF89BA7A26B7F7B700EAB46B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = GanttChart.SwiftUI.Multiplatform/macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = V6L9SVN7M4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = GanttChart.SwiftUI.Multiplatform/macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DlhSoft.GanttChart-SwiftUI-Multiplatform";
+				PRODUCT_NAME = GanttChart.SwiftUI.Multiplatform;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -2508,6 +2887,24 @@
 			buildConfigurations = (
 				BF890EE5235E132E00D3FCF0 /* Debug */,
 				BF890EE6235E132E00D3FCF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF89BA7B26B7F7B700EAB46B /* Build configuration list for PBXNativeTarget "GanttChart.SwiftUI.Multiplatform (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF89BA7726B7F7B700EAB46B /* Debug */,
+				BF89BA7826B7F7B700EAB46B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF89BA7C26B7F7B700EAB46B /* Build configuration list for PBXNativeTarget "GanttChart.SwiftUI.Multiplatform (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF89BA7926B7F7B700EAB46B /* Debug */,
+				BF89BA7A26B7F7B700EAB46B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
