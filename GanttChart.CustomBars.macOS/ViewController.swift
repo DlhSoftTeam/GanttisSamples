@@ -27,7 +27,7 @@ class ViewController: NSViewController {
                 attachment: "Resource \(i % 3 + 1)",
                 details: "Details for item \(i + 1)",
                 context: CustomContext(
-                    heightPercent: 1 - Double(i % 3) / 10,
+                    allocation: 1.25 - Double(i % 5) / 10,
                     baseline: TimeRange(from: Time.current.weekStart.adding(days: max(1, i - 2)),
                                         to: Time.current.weekStart.adding(days: max(2, i * 2 - 1)))
                 ))
@@ -126,7 +126,7 @@ class ViewController: NSViewController {
 // Defines specific supplemental properties for items.
 struct CustomContext {
     // Used to draw bars of different heights, such as in a load chart.
-    var heightPercent: Double = 1
+    var allocation: Double = 1
     // Used to define the time interval of the baseline bars.
     var baseline: TimeRange
 }
@@ -228,7 +228,7 @@ class CustomGanttChartContentPresenter: GanttChartContentPresenter {
         let defaultHeight = ganttChartContent.controller.rowHeight, maxHeightPercent = 1.25
         var heightPercent = 1.0
         if item.isStandard, let context = item.context as? CustomContext {
-            heightPercent = max(0, min(maxHeightPercent, context.heightPercent))
+            heightPercent = max(0, min(maxHeightPercent, context.allocation))
         }
         let margin = defaultHeight * (maxHeightPercent - heightPercent) / 2
         ganttChartContent.drawBar(for: item,
