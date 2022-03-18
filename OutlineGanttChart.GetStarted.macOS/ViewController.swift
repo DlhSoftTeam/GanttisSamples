@@ -136,7 +136,7 @@ class ViewController: NSViewController, OutlineGanttChartDataSource {
         dateFormatter.timeStyle = .short
         // Gantt chart timeline
         ganttChartContentController.scrollableTimeline =
-            TimeRange(from: now.adding(days: -1), to: now.adding(weeks: 5))
+            TimeRange(from: now.adding(days: -1), to: now.adding(weeks: 10))
         ganttChartContentController.intervalHighlighters = [
             TimeSelector(.weeks), TimeSelector(.time)]
         ganttChartContentController.scheduleHighlighters = [ScheduleTimeSelector(.weekends)]
