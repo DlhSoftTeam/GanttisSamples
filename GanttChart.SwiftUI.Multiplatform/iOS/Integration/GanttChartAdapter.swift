@@ -71,7 +71,7 @@ class GanttChartAdapter: ObservableObject, GanttChartItemObserver {
             GanttChartHeaderRow(.weeks(startingOn: .monday)),
             GanttChartHeaderRow(.days, format: .dayOfWeekShortAbbreviation)]
         headerController.rowSelector = GanttChartHeaderRowSource { hourWidth in
-            if hourWidth < 2 {
+            if hourWidth < 2.25 {
                 return [
                     GanttChartHeaderRow(.months),
                     GanttChartHeaderRow(.weeks(startingOn: .monday))]
