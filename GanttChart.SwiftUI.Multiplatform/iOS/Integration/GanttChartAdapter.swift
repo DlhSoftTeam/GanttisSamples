@@ -90,6 +90,8 @@ class GanttChartAdapter: ObservableObject, GanttChartItemObserver {
         contentController.settings.allowsEditingDependencies = false
         self.controller = GanttChartController(
             headerController: headerController, contentController: contentController)
+        controller.rowHeadersWidth = 100
+        controller.rowHeaderProvider = GanttChartRowHeaderSource { row in "Res. \(row + 1)" }
         itemSource.itemObserver = self
     }
     
