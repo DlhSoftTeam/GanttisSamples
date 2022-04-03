@@ -65,10 +65,11 @@ class GanttChartAdapter: ObservableObject, GanttChartItemObserver {
         contentController.timeScale = .intervalsWith(period: 15, in: .minutes)
         contentController.settings.allowsEditingElements = true
         contentController.settings.allowsEditingDependencies = false
-        self.controller = GanttChartController(
+        let controller = GanttChartController(
             headerController: headerController, contentController: contentController)
         controller.rowHeadersWidth = 100
         controller.rowHeaderProvider = GanttChartRowHeaderSource { row in "Res. \(row + 1)" }
+        self.controller = controller
         itemSource.itemObserver = self
     }
     
