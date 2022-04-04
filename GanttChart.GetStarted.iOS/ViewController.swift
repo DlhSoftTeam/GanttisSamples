@@ -125,9 +125,9 @@ class ViewController: UIViewController {
         // headerController.setStyleForTheme(themeName, to: headerStyle)
         // controller.theme = .custom(name: themeName)
         
-        // Row headers:
-        controller.rowHeadersWidth = 100
-        controller.rowHeaderProvider = GanttChartRowHeaderSource { row in "Res. \(row + 1)" }
+        // Optionally, show row headers (useful if multiple bars may share rows, i.e. isColumn != true):
+        // controller.rowHeadersWidth = 100
+        // controller.rowHeaderProvider = GanttChartRowHeaderSource { row in "Res. \(row + 1)" }
         
         // Set up the controller to the view:
         ganttChart.controller = controller
