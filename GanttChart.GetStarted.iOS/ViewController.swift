@@ -132,6 +132,14 @@ class ViewController: UIViewController {
         // Set up the controller to the view:
         ganttChart.controller = controller
     }
+    
+    override var prefersStatusBarHidden: Bool {
+        if super.prefersStatusBarHidden { return true }
+        if #available(iOS 14.0, *) {
+            return ProcessInfo.processInfo.isiOSAppOnMac
+        }
+        return false
+    }
 
 
 }
