@@ -615,10 +615,8 @@
 		BFE8DAA32839689B00665ED6 /* Cocoa */ = {
 			isa = PBXGroup;
 			children = (
-				BFEACF6322F18E9100C933A3 /* GanttChart.GetStarted.macOS */,
-				BFEACF7722F18EA800C933A3 /* GanttChart.GetStarted.iOS */,
-				BFFD1CB4234CECA10033D337 /* OutlineGanttChart.GetStarted.macOS */,
-				BFE8DAA72839695D00665ED6 /* Extras */,
+				BFE8DAA928396B0800665ED6 /* Start */,
+				BFE8DAA72839695D00665ED6 /* Features */,
 				BFE8DAA5283968DA00665ED6 /* Integration */,
 			);
 			name = Cocoa;
@@ -627,6 +625,7 @@
 		BFE8DAA4283968AF00665ED6 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				BFE8DAAA28396B2300665ED6 /* Start */,
 			);
 			name = SwiftUI;
 			sourceTree = "<group>";
@@ -643,7 +642,7 @@
 			name = Integration;
 			sourceTree = "<group>";
 		};
-		BFE8DAA72839695D00665ED6 /* Extras */ = {
+		BFE8DAA72839695D00665ED6 /* Features */ = {
 			isa = PBXGroup;
 			children = (
 				BFD1078626B822F700988250 /* GanttChart.CustomBars.macOS */,
@@ -651,7 +650,24 @@
 				BFF1EA472362D05600624DBE /* GanttChart.Virtualization.macOS */,
 				BFF1EA5E2362DCCB00624DBE /* GanttChart.Virtualization.iOS */,
 			);
-			name = Extras;
+			name = Features;
+			sourceTree = "<group>";
+		};
+		BFE8DAA928396B0800665ED6 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				BFEACF6322F18E9100C933A3 /* GanttChart.GetStarted.macOS */,
+				BFEACF7722F18EA800C933A3 /* GanttChart.GetStarted.iOS */,
+				BFFD1CB4234CECA10033D337 /* OutlineGanttChart.GetStarted.macOS */,
+			);
+			name = Start;
+			sourceTree = "<group>";
+		};
+		BFE8DAAA28396B2300665ED6 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Start;
 			sourceTree = "<group>";
 		};
 		BFEACF5622F18E3800C933A3 = {
