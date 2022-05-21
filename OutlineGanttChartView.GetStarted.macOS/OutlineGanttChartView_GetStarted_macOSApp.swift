@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
+import Ganttis
 
 @main
 struct OutlineGanttChartView_GetStarted_macOSApp: App {
+    init() {
+        Ganttis.license = "..."
+    }
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().frame(minWidth: 800, minHeight: 400)
         }
     }
 }

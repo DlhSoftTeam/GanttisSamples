@@ -80,6 +80,9 @@
 		BFE8DAD928396BA600665ED6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8DAD828396BA600665ED6 /* ContentView.swift */; };
 		BFE8DADB28396BA700665ED6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE8DADA28396BA700665ED6 /* Assets.xcassets */; };
 		BFE8DADE28396BA700665ED6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE8DADD28396BA700665ED6 /* Preview Assets.xcassets */; };
+		BFE8DAE428396C6200665ED6 /* Ganttis in Frameworks */ = {isa = PBXBuildFile; productRef = BFE8DAE328396C6200665ED6 /* Ganttis */; };
+		BFE8DAE628396C7000665ED6 /* Ganttis in Frameworks */ = {isa = PBXBuildFile; productRef = BFE8DAE528396C7000665ED6 /* Ganttis */; };
+		BFE8DAE828396C8000665ED6 /* Ganttis in Frameworks */ = {isa = PBXBuildFile; productRef = BFE8DAE728396C8000665ED6 /* Ganttis */; };
 		BFEACF6522F18E9100C933A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEACF6422F18E9100C933A3 /* AppDelegate.swift */; };
 		BFEACF6722F18E9100C933A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEACF6622F18E9100C933A3 /* ViewController.swift */; };
 		BFEACF6922F18E9100C933A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFEACF6822F18E9100C933A3 /* Assets.xcassets */; };
@@ -289,6 +292,7 @@
 		BFE8DADA28396BA700665ED6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFE8DADD28396BA700665ED6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BFE8DADF28396BA700665ED6 /* OutlineGanttChartView_GetStarted_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OutlineGanttChartView_GetStarted_macOS.entitlements; sourceTree = "<group>"; };
+		BFE8DAE928396FA000665ED6 /* GanttChartView.GetStarted.iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GanttChartView.GetStarted.iOS.entitlements; sourceTree = "<group>"; };
 		BFEACF6122F18E9100C933A3 /* GanttChart.GetStarted.macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GanttChart.GetStarted.macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFEACF6422F18E9100C933A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFEACF6622F18E9100C933A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -398,6 +402,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFE8DAE428396C6200665ED6 /* Ganttis in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +410,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFE8DAE628396C7000665ED6 /* Ganttis in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +418,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFE8DAE828396C8000665ED6 /* Ganttis in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -749,6 +756,7 @@
 				BFE8DAC428396B8200665ED6 /* GanttChartView_GetStarted_iOSApp.swift */,
 				BFE8DAC628396B8200665ED6 /* ContentView.swift */,
 				BFE8DAC828396B8300665ED6 /* Assets.xcassets */,
+				BFE8DAE928396FA000665ED6 /* GanttChartView.GetStarted.iOS.entitlements */,
 				BFE8DACA28396B8300665ED6 /* Preview Content */,
 			);
 			path = GanttChartView.GetStarted.iOS;
@@ -1065,6 +1073,9 @@
 			dependencies = (
 			);
 			name = GanttChartView.GetStarted.macOS;
+			packageProductDependencies = (
+				BFE8DAE328396C6200665ED6 /* Ganttis */,
+			);
 			productName = GanttChartView.GetStarted.macOS;
 			productReference = BFE8DAAF28396B5F00665ED6 /* GanttChartView.GetStarted.macOS.app */;
 			productType = "com.apple.product-type.application";
@@ -1082,6 +1093,9 @@
 			dependencies = (
 			);
 			name = GanttChartView.GetStarted.iOS;
+			packageProductDependencies = (
+				BFE8DAE528396C7000665ED6 /* Ganttis */,
+			);
 			productName = GanttChartView.GetStarted.iOS;
 			productReference = BFE8DAC228396B8200665ED6 /* GanttChartView.GetStarted.iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -1099,6 +1113,9 @@
 			dependencies = (
 			);
 			name = OutlineGanttChartView.GetStarted.macOS;
+			packageProductDependencies = (
+				BFE8DAE728396C8000665ED6 /* Ganttis */,
+			);
 			productName = OutlineGanttChartView.GetStarted.macOS;
 			productReference = BFE8DAD428396BA600665ED6 /* OutlineGanttChartView.GetStarted.macOS.app */;
 			productType = "com.apple.product-type.application";
@@ -2706,6 +2723,7 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = GanttChartView.GetStarted.iOS/GanttChartView.GetStarted.iOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2739,6 +2757,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DlhSoft.GanttChartView-GetStarted-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -2763,6 +2782,7 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = GanttChartView.GetStarted.iOS/GanttChartView.GetStarted.iOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2791,6 +2811,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DlhSoft.GanttChartView-GetStarted-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
@@ -4091,6 +4112,21 @@
 			productName = Ganttis;
 		};
 		BFCC091B26B833F100C34980 /* Ganttis */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFA11D5B2542054F00A1EB6A /* XCRemoteSwiftPackageReference "Ganttis" */;
+			productName = Ganttis;
+		};
+		BFE8DAE328396C6200665ED6 /* Ganttis */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFA11D5B2542054F00A1EB6A /* XCRemoteSwiftPackageReference "Ganttis" */;
+			productName = Ganttis;
+		};
+		BFE8DAE528396C7000665ED6 /* Ganttis */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFA11D5B2542054F00A1EB6A /* XCRemoteSwiftPackageReference "Ganttis" */;
+			productName = Ganttis;
+		};
+		BFE8DAE728396C8000665ED6 /* Ganttis */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = BFA11D5B2542054F00A1EB6A /* XCRemoteSwiftPackageReference "Ganttis" */;
 			productName = Ganttis;

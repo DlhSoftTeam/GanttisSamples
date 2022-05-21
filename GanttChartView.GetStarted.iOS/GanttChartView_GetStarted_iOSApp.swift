@@ -6,12 +6,20 @@
 //
 
 import SwiftUI
+import GanttisTouch
 
 @main
 struct GanttChartView_GetStarted_iOSApp: App {
+    init() {
+        GanttisTouch.license = "..."
+    }
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+            ContentView().navigationBarHidden(true)
+            }
+            .navigationViewStyle(.stack)
+            .statusBar(hidden: ProcessInfo.processInfo.isiOSAppOnMac)
         }
     }
 }
