@@ -180,14 +180,6 @@ struct ContentView: View {
         }
     }
     
-    @State var customRowValues = [UUID: String]()
-    func customValueGetter(item: OutlineGanttChartViewRow) -> String? {
-        return customRowValues[item.id]
-    }
-    func customValueSetter(item: OutlineGanttChartViewRow, value: String?) {
-        customRowValues[item.id] = value
-    }
-    
     func addNewRow() {
         rows.insert(OutlineGanttChartViewRow(
             label: "New",
@@ -208,10 +200,6 @@ struct ContentView: View {
     func changeTheme() {
         theme = theme == .standard ? .jewel : .standard
     }
-}
-
-func date(_ day: Int) -> Time {
-    return Time().weekStart.adding(days: day)
 }
 
 struct ContentView_Previews: PreviewProvider {
